@@ -1,0 +1,13 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Intro to Parametric Curves Terminology:}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Intro to Parametric Curves Terminology:}}{1}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-1001r1}{}{\ignorespaces Figure illustrating a general parametric curve.}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{Example:}}{4}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-5}{Example:}}{5}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-2002r2}{}{\ignorespaces Blank set of coordinate axes for sketching the parametric curve from Example 1.}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-7}{}{Group Work:}}{6}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-8}{Group Work:}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-9}{}{Introductions:}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-10}{Introductions:}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-11}{}{Work with your partners on the following problems:}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-12}{Work with your partners on the following problems:}}{6}\relax 
