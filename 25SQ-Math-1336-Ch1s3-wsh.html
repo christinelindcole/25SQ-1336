@@ -1,0 +1,463 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="25SQ-Math-1336-Ch1s3-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 50--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 50--><p class="noindent" >
+</p><!--l. 50--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 50--><p class="noindent" >
+</p><!--l. 50--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 1336: Calculus III</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Section 1.3: Polar Coordinates</span></p></div>                                                              </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Intro to Polar Coordinates:</h3>
+<hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-1001r1"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 68--><p class="noindent" ><img 
+src="Ch12s3-Polar-Coordinates.jpeg" alt="PIC"  
+ /><br 
+class="newline" />
+</p><!--l. 70--><p class="noindent" ><img 
+src="PolarPaper.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 1: </span><span  
+class="content">Top: Diagram illustrating the relationship between Polar and Cartesian Coordinates. Bottom: Polar
+graph paper.</span></div><!--tex4ht:label?: x1-1001r1 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<!--l. 76--><p class="noindent" > 
+</p><!--l. 79--><p class="noindent" >Instead of describing points in terms of <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+and <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>y</mi></mrow></math>
+coordinates, use:<br 
+class="newline" />
+</p><!--l. 81--><p class="noindent" ><!--l. 81--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi></mrow></math>: the
+<span 
+class="cmssi-10">signed </span>distance from the origin<br 
+class="newline" /><!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>𝜃</mi></mrow></math>: the angle measured
+counter-clockwise from the <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>-axis.<br 
+class="newline" />
+</p><!--l. 85--><p class="noindent" ><span 
+class="cmssbx-10">Note that in this context, we use the convention that</span>
+<!--l. 85--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi></mrow></math> <span 
+class="cmssbx-10">is a</span>
+<span 
+class="cmssbx-10">signed distance, meaning that it may be positive or negative.</span><br 
+class="newline" />
+</p><!--l. 87--><p class="noindent" >This allows us to generate more interesting graphs, and also gives us more ways to describe the same point in
+space.<br 
+class="newline" />
+</p><!--l. 90--><p class="noindent" >To translate back and forth between polar and Cartesian coordinates, we can use the following equations:
+</p>
+<div class="par-math-display"><!--l. 92--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                          <mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mi 
+>y</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>r</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>r</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mo class="qopname">tan</mo><!--nolimits--><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>y</mi></mrow> 
+<mrow 
+><mi 
+>x</mi></mrow></mfrac>
+</mrow></math></div>
+<!--l. 92--><p class="nopar" >
+</p><!--l. 111--><p class="noindent" ><span 
+class="cmssbx-10">Polar Curves:</span><br 
+class="newline" />Given a polar equation <!--l. 112--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+the graph is the set of all points that have at least one representation
+<!--l. 112--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math> that
+satisﬁes the equation given.<br 
+class="newline" /> <br 
+class="newline" />
+</p><!--l. 114--><p class="noindent" ><span 
+class="cmssbx-10">Tangents to Polar Curves:</span>
+</p><!--l. 116--><p class="noindent" >To ﬁnd an expression for the slope of a polar curve, we start with our expression for the slope of a parametric curve,
+letting <!--l. 116--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>𝜃</mi></mrow></math>
+be the parameter, and then apply the product rule for derivatives:
+</p>
+                                                                                         
+                                                                                         
+<div class="par-math-display"><!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                         <mfrac><mrow 
+><mi 
+>d</mi><mi 
+>y</mi></mrow>
+<mrow 
+><mi 
+>d</mi><mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mfrac><mrow><mi 
+>d</mi><mi 
+>y</mi></mrow> 
+<mrow><mi 
+>d</mi><mi 
+>𝜃</mi></mrow></mfrac></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>x</mi>
+<mi 
+>d</mi><mi 
+>𝜃</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mfrac><mrow> <mi 
+>d</mi></mrow> 
+<mrow><mi 
+>d</mi><mi 
+>𝜃</mi></mrow></mfrac> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>r</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo class="qopname">sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced></mrow> 
+<mrow 
+> <mi 
+>d</mi>
+<mi 
+>d</mi><mi 
+>𝜃</mi> <mfenced separators="" 
+open="("  close=")" ><mrow><mi 
+>r</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo class="qopname">cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></mfenced></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mfrac><mrow><mi 
+>d</mi><mi 
+>r</mi></mrow> 
+<mrow><mi 
+>d</mi><mi 
+>𝜃</mi></mrow></mfrac><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>r</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow> 
+<mrow 
+><mi 
+>d</mi><mi 
+>r</mi>
+<mi 
+>d</mi><mi 
+>𝜃</mi><mo class="qopname">cos</mo><!--nolimits--><mi 
+>𝜃</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>r</mi><mo class="qopname">sin</mo><!--nolimits--><mi 
+>𝜃</mi></mrow></mfrac>
+</mrow></math></div>
+<!--l. 122--><p class="nopar" >
+<a 
+ id="Q1-1-4"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Warm-up Problem:</h3>
+     <dl class="enumerate"><dt class="enumerate">
+  1. </dt><dd 
+class="enumerate">On the polar axes above, plot and label the point <!--l. 134--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>P</mi></mrow></math>
+     whose polar coordinates are <!--l. 134--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mfrac><mrow> <mn>3</mn><mi 
+>π</mi></mrow> 
+ <mrow><mn>4</mn></mrow></mfrac> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>.
+     </dd><dt class="enumerate">
+  2. </dt><dd 
+class="enumerate">Find <span 
+class="cmssbx-10">two </span>other pairs of polar coordinates for this point, one with <!--l. 138--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></mrow></math>,
+     and one with <!--l. 138--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi> <mo 
+class="MathClass-rel">&#x003C;</mo> <mn>0</mn></mrow></math>.
+     <!--l. 142--><p class="noindent" ><span class="underline"><!--l. 142--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/></mrow></math></span>
+     <span class="underline"><!--l. 142--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>r</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/></mrow></math></span>
+     </p></dd><dt class="enumerate">
+  3. </dt><dd 
+class="enumerate">Find the Cartesian Coordinates of this point. <span 
+class="cmssbx-10">Please leave your answer in exact form</span>.
+     <!--l. 151--><p class="noindent" ><span class="underline"><!--l. 151--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/></mrow></math></span>
+</p>
+     </dd></dl>
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-6"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Examples:</h3>
+<!--l. 199--><p class="noindent" >We will work through Example 3 together, then work on the remaining problems in small groups.
+          </p><dl class="enumerate"><dt class="enumerate">
+Example 3: </dt><dd 
+class="enumerate">Plot the curve <!--l. 207--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> sin</mo><!--nolimits--><mi 
+>𝜃</mi></mrow></math>.
+          <br 
+class="newline" /><span 
+class="cmssi-10">Hint: </span>Start by creating a table of values for <!--l. 208--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>𝜃</mi></mrow></math>
+          and <!--l. 208--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi></mrow></math>,
+          then plot the points on the axes below.<a 
+ id="x1-30013"></a> <hr class="figure" /><div class="figure" 
+><a 
+ id="x1-3002r2"></a>
+<!--l. 211--><p class="noindent" ><img 
+src="PolarPaper.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 2: </span><span  
+class="content">Polar graph paper to be used for Example <a 
+href="#x1-30013">3<!--tex4ht:ref: ex3 --></a>.</span></div><!--tex4ht:label?: x1-3002r2 -->
+          </div><hr class="endfigure" />
+          </dd><dt class="enumerate">
+Example 4: </dt><dd 
+class="enumerate">Plot <!--l. 218--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>𝜃</mi></mrow></math> and determine
+          the slope at <!--l. 218--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>𝜃</mi> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>π</mi></mrow> 
+<mrow 
+><mn>2</mn></mrow></mfrac> </mrow></math>.<a 
+ id="x1-30034"></a>
+          <hr class="figure" /><div class="figure" 
+><a 
+ id="x1-3004r3"></a>
+<!--l. 223--><p class="noindent" ><img 
+src="PolarPaper.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 3: </span><span  
+class="content">Polar graph paper to be used for Example <a 
+href="#x1-30034">4<!--tex4ht:ref: ex4 --></a>.</span></div><!--tex4ht:label?: x1-3004r3 -->
+          </div><hr class="endfigure" />
+                                                                                         
+                                                                                         
+          </dd><dt class="enumerate">
+Example 5: </dt><dd 
+class="enumerate">Find a polar equation for the curve represented by the given Cartesian equation.
+<div class="math-display"><!--l. 236--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                          <msup><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>4</mn><mi 
+>x</mi>
+</mrow></math></div>
+          <!--l. 238--><p class="nopar" >
+          </p></dd><dt class="enumerate">
+Example 6: </dt><dd 
+class="enumerate">Find a Cartesian equation for the curve represented by the given polar equation.
+<div class="math-display"><!--l. 245--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                         <mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn><mo class="qopname">sec</mo><!--nolimits--><mi 
+>𝜃</mi>
+</mrow></math></div>
+          <!--l. 247--><p class="nopar" >
+          </p></dd><dt class="enumerate">
+Example 7: </dt><dd 
+class="enumerate">Find a Cartesian equation for the curve represented by the given polar equation.
+<div class="math-display"><!--l. 254--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                      <mi 
+>r</mi> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn> <mo 
+class="MathClass-bin">+</mo><mo class="qopname"> cos</mo><!--nolimits--><mi 
+>𝜃</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</mrow></math></div>
+          <!--l. 256--><p class="nopar" >
+</p>
+          </dd></dl>
+                                                                                         
+                                                                                         
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+
