@@ -56,8 +56,8 @@
 \renewcommand{\b}{\vec{b}}
 \renewcommand{\c}{\vec{c}}
 
-\newcommand{\<}{\left\langle}
-\renewcommand{\>}{\right\rangle}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
 
 \renewcommand{\myTitle}{MATH 1336: Calculus III}
 
@@ -82,26 +82,28 @@ The \textbf{cross product} of two vectors, \(\vec{a}=\<a_1,a_2,a_3\>, \b=\<b_1,b
 \[
 \a \times \b = \begin{array}{|ccc|}
 ~\ihat & \jhat & \khat~\\
-a_1 & a_2 & a_3\\
-b_1 & b_2 & b_3
+~a_1 & a_2 & a_3~\\
+~b_1 & b_2 & b_3~
 \end{array}
- = \left|\begin{array}{cc}
- a_2 & a_3\\
- b_2 & b_3
+ =\begin{array}{|cc|}
+~ a_2 & a_3~\\
+~ b_2 & b_3~
  \end{array}
- \right|
+ \ 
  \ihat
- - \begin{vmatrix}
- a_1 & a_3\\
- b_1 & b_3
- \end{vmatrix}
+ - \begin{array}{|cc|}
+~ a_1 & a_3~\\
+~ b_1 & b_3~
+ \end{array}
+ \ 
  \jhat
- + \begin{vmatrix}
- a_1 & a_2\\
- b_1 & b_2
- \end{vmatrix}
+ + \begin{array}{|cc|}
+~ a_1 & a_2~\\
+~ b_1 & b_2~
+ \end{array}
+ \ 
  \khat
- = \left(a_2 b_3 - a_3 b_2\right) \ihat - \left( a_1 b_3 - a_3 b_1\right) \jhat + \left( a_1 b_2 - a_2 b_1\right) \khat
+ = (a_2 b_3 - a_3 b_2) \ihat - ( a_1 b_3 - a_3 b_1) \jhat + ( a_1 b_2 - a_2 b_1) \khat
 \]
 
 ~\\
@@ -166,31 +168,31 @@ Find \(\a \times \b\) and verify that it is perpendicular to \(\a\) and \(\b\).
 
 
 \[
-\a \times \b = \begin{vmatrix}
-\ihat & \jhat & \khat\\
-1 & 2 & 3\\
-4 & 5 & 6
-\end{vmatrix}
- = \begin{vmatrix}
- 2 & 3\\
- 5 & 6
- \end{vmatrix}
+\a \times \b = \begin{array}{|ccc|}
+~\ihat & \jhat & \khat~\\
+~1 & 2 & 3~\\
+~4 & 5 & 6~
+\end{array}
+ = \begin{array}{|cc|}
+ ~2 & 3~\\
+ ~5 & 6~
+ \end{array}\ 
  \ihat
- - \begin{vmatrix}
- 1 & 3\\
- 4 & 6
- \end{vmatrix}
+ - \begin{array}{|cc|}
+ ~1 & 3~\\
+~4 & 6~
+ \end{array}\ 
  \jhat
- + \begin{vmatrix}
- 1 & 2\\
- 4 & 5
- \end{vmatrix}
+ + \begin{array}{|cc|}
+~ 1 & 2~\\
+ ~4 & 5~
+ \end{array}\ 
  \khat
- = \left[(2) (6) - (3)( 5)\right] \ihat - \left[ (1) (6) - (3)( 4)\right] \jhat + \left[ (1)( 5) - (2) (4)\right] \khat
+ = [(2) (6) - (3)( 5)] \ihat - [ (1) (6) - (3)( 4)] \jhat + [ (1)( 5) - (2) (4)] \khat
 \]
 
 \[
-\a \times \b = \left(12 - 15\right) \ihat - \left( 6 - 12 \right) \jhat + \left( 5 - 8 \right) \khat = \<-3, 6, -3\>
+\a \times \b = (12 - 15) \ihat - ( 6 - 12 ) \jhat + ( 5 - 8 ) \khat = \<-3, 6, -3\>
 \]
 
 \vfill
@@ -198,11 +200,11 @@ Find \(\a \times \b\) and verify that it is perpendicular to \(\a\) and \(\b\).
 To verify that the result is perpendicular to both \(\a\) and \(\b\), use the dot product!
 
 \[
-\left(\a \times \b\right) \cdot \a = \<-3, 6, -3\> \cdot \<1, 2, 3\> = -3 + 12 -9 = 0
+(\a \times \b) \cdot \a = \<-3, 6, -3\> \cdot \<1, 2, 3\> = -3 + 12 -9 = 0
 \]
 
 \[
-\left(\a \times \b\right) \cdot \b = \<-3, 6, -3\> \cdot \<4, 5, 6\> = -12+30-18 = 0
+(\a \times \b) \cdot \b = \<-3, 6, -3\> \cdot \<4, 5, 6\> = -12+30-18 = 0
 \]
 
 \vfill
@@ -219,10 +221,10 @@ To verify that the result is perpendicular to both \(\a\) and \(\b\), use the do
 \begin{enumerate}
 \item \(\a \times \b = -\ \b \times \a\)
 \item \((s\a) \times \b =s(\a \times \b) = \a \times (s\b)\)
-\item \(\a \times \left(\b +\c\right) = \a \times \b + \a \times \c\)
-\item \(\left(\a +\b\right) \times \c = \a \times \c + \b \times \c\)
-\item \( \a \cdot \left(\b \times \c\right) = \left( \a \times \b\right) \cdot \c\)
-\item \( \a \times \left(\b \times \c\right) = \left( \a \cdot \c\right) \b - \left(\a  \cdot \b\right) \c\)
+\item \(\a \times (\b +\c) = \a \times \b + \a \times \c\)
+\item \((\a +\b) \times \c = \a \times \c + \b \times \c\)
+\item \( \a \cdot (\b \times \c) = ( \a \times \b) \cdot \c\)
+\item \( \a \times (\b \times \c) = ( \a \cdot \c) \b - (\a  \cdot \b) \c\)
 \end{enumerate}
 
 %\hrule
@@ -299,25 +301,25 @@ The \textbf{torque}, \(\vec{\tau}\), from applying a force \(\vec{F}\) to a rigi
 %\textbf{Vocabulary \& Definitions:} \\~\\
 %The \textbf{cross product} of two vectors, \(\vec{a}=\<a_1,a_2,a_3\>, \b=\<b_1,b_2,b_3\>\) results in a vector that is orthogonal to both \(\a\) and \(\b\). 
 %\[
-%\a \times \b = \begin{vmatrix}
+%\a \times \b = \begin{array}{}
 %\ihat & \jhat & \khat\\
 %a_1 & a_2 & a_3\\
 %b_1 & b_2 & b_3
-%\end{vmatrix}
-% = \begin{vmatrix}
+%\end{array}
+% = \begin{array}{}
 % a_2 & a_3\\
 % b_2 & b_3
-% \end{vmatrix}
+% \end{array}
 % \ihat
-% - \begin{vmatrix}
+% - \begin{array}{}
 % a_1 & a_3\\
 % b_1 & b_3
-% \end{vmatrix}
+% \end{array}
 % \jhat
-% + \begin{vmatrix}
+% + \begin{array}{}
 % a_1 & a_2\\
 % b_1 & b_2
-% \end{vmatrix}
+% \end{array}
 % \khat
 %\]
 %

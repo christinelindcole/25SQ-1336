@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  15 APR 2025 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  15 APR 2025 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1761,15 +1761,15 @@ File: ot1lmvtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1] [2
 
 ]
-l.126 --- TeX4ht warning --- Cannot determine size of graphic in Ch2s4-right-ha
+l.128 --- TeX4ht warning --- Cannot determine size of graphic in Ch2s4-right-ha
 nd-rule.png (no BoundingBox) ---
-l. 126 --- needs --- Ch2s4-right-hand-rule.png ---
+l. 128 --- needs --- Ch2s4-right-hand-rule.png ---
 [3
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 134.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 136.
 
 
 [4
@@ -1777,9 +1777,9 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
 ] [5] [6] [7
 
 ]
-l.239 --- TeX4ht warning --- Cannot determine size of graphic in Ch2s4-area-par
+l.241 --- TeX4ht warning --- Cannot determine size of graphic in Ch2s4-area-par
 allelogram.png (no BoundingBox) ---
-l. 239 --- needs --- Ch2s4-area-parallelogram.png ---
+l. 241 --- needs --- Ch2s4-area-parallelogram.png ---
 [8
 
 ] [9
@@ -1787,9 +1787,9 @@ l. 239 --- needs --- Ch2s4-area-parallelogram.png ---
 ] [10
 
 ]
-l.268 --- TeX4ht warning --- Cannot determine size of graphic in Ch2s4-torque3.
+l.270 --- TeX4ht warning --- Cannot determine size of graphic in Ch2s4-torque3.
 png (no BoundingBox) ---
-l. 268 --- needs --- Ch2s4-torque3.png ---
+l. 270 --- needs --- Ch2s4-torque3.png ---
 [11
 
 ]
@@ -1797,17 +1797,17 @@ l. 268 --- needs --- Ch2s4-torque3.png ---
  [12
 
 ] [13]
-l.444 --- TeX4ht warning --- Cannot determine size of graphic in 25SQ-Math-1336
+l.446 --- TeX4ht warning --- Cannot determine size of graphic in 25SQ-Math-1336
 -Ch2s4-wsh-figure0.png (no BoundingBox) ---
-l. 444 --- needs --- 25SQ-Math-1336-Ch2s4-wsh-figure0.png ---
+l. 446 --- needs --- 25SQ-Math-1336-Ch2s4-wsh-figure0.png ---
 [14] [15] (./25SQ-Math-1336-Ch2s4-wsh.aux) ) 
 Here is how much of TeX's memory you used:
- 35923 strings out of 493090
- 806279 string characters out of 6134868
+ 35907 strings out of 493090
+ 805224 string characters out of 6134868
  1053311 words of memory out of 5000000
- 38521 multiletter control sequences out of 15000+600000
+ 38505 multiletter control sequences out of 15000+600000
  17859 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,18n,83p,10984b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,16n,83p,10984b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 25SQ-Math-1336-Ch2s4-wsh.dvi (272 pages, 151248 bytes).
+Output written on 25SQ-Math-1336-Ch2s4-wsh.dvi (272 pages, 149460 bytes).
