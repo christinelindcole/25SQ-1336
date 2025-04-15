@@ -80,15 +80,16 @@
 The \textbf{cross product} of two vectors, \(\vec{a}=\<a_1,a_2,a_3\>, \b=\<b_1,b_2,b_3\>\) results in a vector that is orthogonal to both \(\a\) and \(\b\). \\~\\
 
 \[
-\a \times \b = \begin{vmatrix}
-\ihat & \jhat & \khat\\
+\a \times \b = \begin{array}{|ccc|}
+~\ihat & \jhat & \khat~\\
 a_1 & a_2 & a_3\\
 b_1 & b_2 & b_3
-\end{vmatrix}
- = \begin{vmatrix}
+\end{array}
+ = \left|\begin{array}{cc}
  a_2 & a_3\\
  b_2 & b_3
- \end{vmatrix}
+ \end{array}
+ \right|
  \ihat
  - \begin{vmatrix}
  a_1 & a_3\\
