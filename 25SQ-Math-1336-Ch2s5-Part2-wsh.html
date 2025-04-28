@@ -1,0 +1,1000 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="25SQ-Math-1336-Ch2s5-Part2-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 67--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 67--><p class="noindent" >
+</p><!--l. 67--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 67--><p class="noindent" >
+</p><!--l. 67--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 1336: Calculus III</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Section 2.5, Part 2: Planes</span> </p></div>                                                                  </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Equations of Planes:</h3>
+<!--l. 78--><p class="noindent" >You may have geometric intuition that three points determine a plane. Our equations for planes will be built using one
+point, <!--l. 78--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow></math>,
+and vector that is perpendicular to the plane, called the normal vector:
+<!--l. 78--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow></math>.
+</p>
+<hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-1001r1"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 85--><p class="noindent" ><img 
+src="Ch2s5-planes2a.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 1: </span><span  
+class="content">Illustration of a plane containing two vectors, and a vector that is perpendicular to the plane.</span></div><!--tex4ht:label?: x1-1001r1 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<!--l. 90--><p class="noindent" > 
+</p><!--l. 93--><p class="noindent" >Note that if we have three points that are on the plane,
+<!--l. 93--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>P</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>Q</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>R</mi></mrow></math>, we can ﬁnd
+the normal direction by taking the cross product of vectors drawn from one point to the other two points, for example:
+<!--l. 93--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover class="overrightarrow"><mrow 
+><mi 
+>P</mi><mi 
+>R</mi></mrow><mo 
+class="MathClass-op">⃗</mo></mover> <mo 
+class="MathClass-bin">×</mo><mover class="overrightarrow"><mrow 
+><mi 
+>P</mi><mi 
+>Q</mi></mrow><mo 
+class="MathClass-op">⃗</mo></mover></mrow></math>.
+</p><!--l. 97--><p class="noindent" >The plane equations are built on two key ideas: the normal vector,
+<!--l. 97--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow></math>, is
+perpendicular to any vector that lies in the plane, and that the dot product of two perpendicular vectors is
+zero.<br 
+class="newline" />
+</p><!--l. 100--><p class="noindent" >Let <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow></mfenced></mrow></math> be the position vector for a
+speciﬁc point on the plane, <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>, and
+let <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow></mfenced></mrow></math> be the position vector for
+any general point on the plane: <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>P</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>.
+Then the vector <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover class="overrightarrow"><mrow 
+><msub><mrow 
+><mi 
+>P</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mi 
+>P</mi></mrow><mo 
+class="MathClass-op">⃗</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow></mfenced></mrow></math> lies in
+the plane. Finally, let <!--l. 101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>a</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>b</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>c</mi></mrow></mfenced></mrow></math>
+be the normal vector. Then the plane can be described by any of the following types of equations:<br 
+class="newline" />
+</p>
+<hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-1002r2"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 109--><p class="noindent" ><img 
+src="Ch2s5-planes2b.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 2: </span><span  
+class="content">Illustration of a plane in three dimensions for reference when building plane equations.</span></div><!--tex4ht:label?: x1-1002r2 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<!--l. 114--><p class="noindent" > 
+</p><!--l. 121--><p class="noindent" ><span 
+class="cmssbx-10">Vector Equation:</span>
+</p>
+<div class="par-math-display"><!--l. 123--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                    <mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-bin">⋅</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</mrow></math></div>
+<!--l. 125--><p class="nopar" >  <br 
+class="newline" />
+</p><!--l. 128--><p class="noindent" ><span 
+class="cmssbx-10">Scalar Equation:</span>
+</p>
+<div class="par-math-display"><!--l. 130--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                             <mi 
+>a</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>b</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>y</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>y</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mi 
+>c</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>z</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>z</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</mrow></math></div>
+<!--l. 132--><p class="nopar" >
+</p><!--l. 134--><p class="noindent" > <br 
+class="newline" />
+</p><!--l. 136--><p class="noindent" ><span 
+class="cmssbx-10">Standard Form:</span><br 
+class="newline" />
+</p>
+                                                                                         
+                                                                                         
+<div class="par-math-display"><!--l. 138--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                    <mi 
+>a</mi><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>b</mi><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>c</mi><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>d</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</mrow></math></div>
+<!--l. 140--><p class="nopar" >
+</p><!--l. 142--><p class="noindent" > <br 
+class="newline" />
+</p><!--l. 146--><p class="noindent" >Note that <!--l. 146--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>a</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>b</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>c</mi></mrow></math>
+are sometimes called the <span 
+class="cmssbx-10">attitude numbers </span>of the plane.
+<a 
+ id="Q1-1-5"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-2000"></a>Warmup: Parallel, Perpendicular, or Neither?</h3>
+<!--l. 154--><p class="noindent" >For each of the following, determine whether the given items are parallel, perpendicular, or neither:
+     </p><dl class="list1"><dt class="list">
+<span 
+class="cmssbx-10">Warmup 1:</span>  </dt><dd 
+class="list">
+     <!--l. 160--><p class="noindent" >The vectors:
+</p>
+<div class="math-display"><!--l. 161--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+><msub><mrow 
+>
+                           <mover 
+accent="true"><mrow 
+><mi 
+>v</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo><mo 
+class="MathClass-rel">&#x003C;</mo> <mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mn>3</mn> <mo 
+class="MathClass-rel">&#x003E;</mo><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>v</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mn>3</mn><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ı</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">−</mo> <mn>2</mn><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ȷ</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><mn>2</mn></mrow> 
+<mrow 
+><mn>3</mn></mrow></mfrac><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >k</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover>
+</mrow></math></div>
+     <!--l. 163--><p class="nopar" >
+     </p></dd><dt class="list">
+<span 
+class="cmssbx-10">Warmup 2:</span>  </dt><dd 
+class="list">
+     <!--l. 167--><p class="noindent" >The lines:
+                                                                                         
+                                                                                         
+     <!--tex4ht:inline--></p><!--l. 168--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mtable 
+class="eqnarray-star" columnalign="right center left" >
+<mtr><mtd 
+class="eqnarray-1"> <msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-punc">:</mo> <mspace width="1em" class="quad"/><mfrac><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>1</mn><mn>7</mn></mrow> 
+   <mrow 
+><mn>5</mn></mrow></mfrac>     <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>y</mi> <mo 
+class="MathClass-bin">−</mo> <mn>4</mn></mrow> 
+   <mrow 
+><mn>2</mn></mrow></mfrac>    <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>z</mi> <mo 
+class="MathClass-bin">−</mo> <mn>1</mn><mn>5</mn></mrow> 
+   <mrow 
+><mn>6</mn></mrow></mfrac>    <mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><msub><mrow 
+><mi 
+>L</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+> <mo 
+class="MathClass-punc">:</mo> <mspace width="1em" class="quad"/><mfrac><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn><mn>0</mn></mrow> 
+   <mrow 
+><mn>6</mn></mrow></mfrac>     <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn><mn>0</mn></mrow> 
+   <mrow 
+><mn>4</mn></mrow></mfrac>     <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn><mn>1</mn></mrow> 
+   <mrow 
+><mn>9</mn></mrow></mfrac>    </mtd><mtd 
+class="eqnarray-2">    </mtd><mtd 
+class="eqnarray-3">    </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>                                                   </mtr></mtable>
+</math>
+     <!--l. 171--><p class="nopar" >
+</p>
+     </dd></dl>
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-7"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-3000"></a>Example 3:</h3>
+<!--l. 208--><p class="noindent" >Find the equation of the plane that passes through
+</p>
+<div class="par-math-display"><!--l. 210--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                             <mi 
+>P</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>Q</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>R</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow>
+</mrow></math></div>
+<!--l. 210--><p class="nopar" >_________________________________________________________________________________________
+</p><!--l. 216--><p class="noindent" >Let&#x2019;s choose to build <!--l. 216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow></math>
+using the vectors <!--l. 216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover class="overrightarrow"><mrow 
+><mi 
+>P</mi><mi 
+>Q</mi></mrow><mo 
+class="MathClass-op">⃗</mo></mover></mrow></math>
+and <!--l. 216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover class="overrightarrow"><mrow 
+><mi 
+>P</mi><mi 
+>R</mi></mrow><mo 
+class="MathClass-op">⃗</mo></mover></mrow></math>, and
+to use <!--l. 216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>P</mi></mrow></math> to
+deﬁne <!--l. 216--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow></math>.
+Diﬀerent choices would result in equations for the plane that might look slightly diﬀerent, but would still describe the
+same plane!
+</p>
+<div class="par-math-display"><!--l. 219--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+<mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mover class="overrightarrow"><mrow 
+><mi 
+>P</mi><mi 
+>Q</mi></mrow><mo 
+class="MathClass-op">⃗</mo></mover><mo 
+class="MathClass-bin">×</mo><mover class="overrightarrow"><mrow 
+><mi 
+>P</mi><mi 
+>R</mi></mrow><mo 
+class="MathClass-op">⃗</mo></mover> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"><mtr><mtd 
+class="array"  columnalign="center"><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ı</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mtd><mtd 
+class="array"  columnalign="center"><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ȷ</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mtd><mtd 
+class="array"  columnalign="center"><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >k</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mtd>
+</mtr><mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mn>3</mn></mtd><mtd 
+class="array"  columnalign="center"> <mn>2</mn> </mtd><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd></mtr><mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mn>3</mn></mtd> <mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd> <mtd 
+class="array"  columnalign="center"> <mn>1</mn></mtd>
+</mtr><!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                          </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo>  <mfenced separators="" 
+open="|"  close="|" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"><mtr><mtd 
+class="array"  columnalign="center"><mn>2</mn></mtd><mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd 
+class="array"  columnalign="center"> <mn>0</mn> </mtd> <mtd 
+class="array"  columnalign="center"><mn>1</mn></mtd></mtr>
+<!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                          </mrow></mfenced><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ı</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">−</mo><mfenced separators="" 
+open="|"  close="|" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"><mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mn>3</mn></mtd><mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd 
+class="array"  columnalign="center"> <mo 
+class="MathClass-bin">−</mo><mn>3</mn> </mtd> <mtd 
+class="array"  columnalign="center"><mn>1</mn></mtd>
+</mtr><!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                          </mrow></mfenced><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ȷ</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">+</mo> <mfenced separators="" 
+open="|"  close="|" ><mrow><mtable  align="axis" style=""  
+equalrows="false" columnlines="none none none none none none none none none" equalcolumns="false" class="array"><mtr><mtd 
+class="array"  columnalign="center"><mo 
+class="MathClass-bin">−</mo><mn>3</mn></mtd><mtd 
+class="array"  columnalign="center"><mn>2</mn></mtd></mtr><mtr><mtd 
+class="array"  columnalign="center"> <mo 
+class="MathClass-bin">−</mo><mn>3</mn> </mtd> <mtd 
+class="array"  columnalign="center"><mn>0</mn></mtd>
+</mtr><!--*\c@MaxMatrixCols c--></mtable>                                                                                                                                          </mrow></mfenced><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >k</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mo 
+class="MathClass-bin">−</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ı</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">−</mo><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>3</mn><mo 
+class="MathClass-bin">−</mo><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ȷ</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">+</mo><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-bin">+</mo><mn>6</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >k</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn><mspace width="1em" class="nbsp" /><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ı</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">+</mo><mn>3</mn><mspace width="1em" class="nbsp" /><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ȷ</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">+</mo><mn>6</mn><mspace width="1em" class="nbsp" /><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >k</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover>
+</mrow></math></div>
+<!--l. 241--><p class="nopar" >
+</p>
+                                                                                         
+                                                                                         
+<div class="par-math-display"><!--l. 243--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                  <mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mn>6</mn></mrow></mfenced><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mn>0</mn></mrow></mfenced>
+</mrow></math></div>
+<!--l. 245--><p class="nopar" >
+</p><!--l. 247--><p class="noindent" > <br 
+class="newline" />
+</p>
+<hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-3001r3"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 256--><p class="noindent" ><img 
+src="Ch2s5-ex3.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 3: </span><span  
+class="content">Illustration for Example 3.</span></div><!--tex4ht:label?: x1-3001r3 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<!--l. 262--><p class="noindent" > 
+</p><!--l. 269--><p class="noindent" ><span 
+class="cmssbx-10">Vector Equation </span><!--l. 269--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-bin">⋅</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-bin">−</mo><msub><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>r</mi></mrow><mo 
+class="MathClass-op">→</mo></mover></mrow><mrow 
+><mn>0</mn></mrow></msub 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></mrow></math>:
+</p>
+<div class="par-math-display"><!--l. 271--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                    <mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mn>6</mn></mrow></mfenced> <mo 
+class="MathClass-bin">⋅</mo><mfenced separators="" 
+open="⟨"  close="⟩" ><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>3</mn><mo 
+class="MathClass-punc">,</mo><mi 
+>y</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>z</mi></mrow></mfenced> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</mrow></math></div>
+<!--l. 271--><p class="nopar" >
+</p><!--l. 273--><p class="noindent" > <br 
+class="newline" />
+</p><!--l. 275--><p class="noindent" ><span 
+class="cmssbx-10">Scalar Equation </span>(calculate the dot product):
+</p>
+<div class="par-math-display"><!--l. 277--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                   <mn>2</mn><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mn>3</mn><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mn>6</mn><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</mrow></math></div>
+<!--l. 277--><p class="nopar" >
+</p><!--l. 279--><p class="noindent" > <br 
+class="newline" />
+</p><!--l. 281--><p class="noindent" ><span 
+class="cmssbx-10">Standard Form </span>(expand all terms and gather constants):
+</p>
+                                                                                         
+                                                                                         
+<div class="par-math-display"><!--l. 283--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                    <mn>2</mn><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mn>3</mn><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mn>6</mn><mi 
+>z</mi> <mo 
+class="MathClass-bin">−</mo> <mn>6</mn> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn>
+</mrow></math></div>
+<!--l. 285--><p class="nopar" >
+<a 
+ id="Q1-1-10"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Example 4:</h3>
+<!--l. 292--><p class="noindent" >Find the symmetric equations for the line of intersection of the planes:
+</p>
+<div class="par-math-display"><!--l. 294--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                               <mn>3</mn><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>2</mn><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mn>4</mn><mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mspace width="2em" class="qquad"/><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mn>3</mn><mi 
+>z</mi> <mo 
+class="MathClass-rel">=</mo> <mn>5</mn>
+</mrow></math></div>
+<!--l. 296--><p class="nopar" >
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-12"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-5000"></a>Planes Practice Problems:</h3>
+     <dl class="list1"><dt class="list">
+<span 
+class="cmssbx-10">Problem 4:</span>  </dt><dd 
+class="list">
+     <!--l. 309--><p class="noindent" > <br 
+class="newline" />Find a scalar equation for the plane that contains the point <!--l. 310--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>P</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>7</mn><mo 
+class="MathClass-punc">,</mo><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+     and is normal to the vector <!--l. 310--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mover 
+accent="true"><mrow 
+><mi 
+>n</mi></mrow><mo 
+class="MathClass-op">→</mo></mover> <mo 
+class="MathClass-rel">=</mo> <mn>2</mn><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ı</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover> <mo 
+class="MathClass-bin">+</mo> <mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >ȷ</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover><mo 
+class="MathClass-bin">−</mo> <mn>3</mn><mover 
+accent="true"><mrow 
+><mstyle 
+class="text"><mtext class="textbf" mathvariant="bold" >k</mtext></mstyle></mrow><mo 
+class="MathClass-op"> ̂</mo></mover></mrow></math>.
+     </p></dd><dt class="list">
+<span 
+class="cmssbx-10">Problem 5:</span>  </dt><dd 
+class="list">
+     <!--l. 314--><p class="noindent" > <br 
+class="newline" />Find the standard form equation of a plane containing <!--l. 315--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>P</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+     <!--l. 315--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>Q</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>3</mn><mo 
+class="MathClass-punc">,</mo><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+     and <!--l. 315--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>4</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>.
+     </p></dd><dt class="list">
+<span 
+class="cmssbx-10">Problem 6:</span>  </dt><dd 
+class="list">
+     <!--l. 320--><p class="noindent" > <br 
+class="newline" />Find an equation for the line that passes through the point <!--l. 321--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>Q</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mo 
+class="MathClass-punc">,</mo><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+     and is orthogonal to the plane <!--l. 321--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mn>3</mn><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>7</mn><mi 
+>y</mi> <mo 
+class="MathClass-bin">+</mo> <mn>5</mn><mi 
+>z</mi> <mo 
+class="MathClass-bin">+</mo> <mn>5</mn><mn>5</mn> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></mrow></math>.
+     Where does the line intersect the plane?
+</p>
+     </dd></dl>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+
