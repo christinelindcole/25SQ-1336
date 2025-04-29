@@ -1,0 +1,11 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Vector Functions, Space Curves, \& Arclength: }}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Vector Functions, Space Curves, \& Arclength: }}{1}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-1001r1}{}{\ignorespaces Diagram illustrating a general space curve in three dimensions.}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{Warmup: Parallel, Perpendicular, or Neither?}}{5}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-5}{Warmup: Parallel, Perpendicular, or Neither?}}{5}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-6}{}{Space Curve Examples:}}{7}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-7}{Space Curve Examples:}}{7}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-8}{}{Space Curve Problems:}}{7}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-9}{Space Curve Problems:}}{7}\relax 
+\par 
