@@ -1,0 +1,13 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Convergence/Divergence of Infinite Sequences:}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Convergence/Divergence of Infinite Sequences:}}{1}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-1001r1}{}{\ignorespaces Sequence Illustrations: First graph shows a sequence that converges, second graph shows a sequence that diverges due to oscillation.}}{figure}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{Tools for Finding Limits of Sequences:}}{6}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-5}{Tools for Finding Limits of Sequences:}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-6}{}{The following limit laws can be used without a formal citation:}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-7}{The following limit laws can be used without a formal citation:}}{6}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-8}{}{The following theorems must be formally cited when used:}}{8}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-9}{The following theorems must be formally cited when used:}}{8}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-4001r2}{}{\ignorespaces Figure illustrates the Squeeze Theorem for sequences.}}{figure}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-11}{}{If you want to use L'Hopital's Rule:}}{12}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-12}{If you want to use L'Hopital's Rule:}}{12}\relax 
