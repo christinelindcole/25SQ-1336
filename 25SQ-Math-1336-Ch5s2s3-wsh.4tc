@@ -1,0 +1,19 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Infinite Series Convergence Bathtub Analogy: }}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Infinite Series Convergence Bathtub Analogy: }}{1}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-1001r1}{}{\ignorespaces Diagram showing a bathtub that is being filled with successive amounts of water going to zero and does not overflow.}}{figure}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{Bathtub Theorem:}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-5}{Bathtub Theorem:}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-6}{}{INCONCLUSIVE CASE!}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-7}{INCONCLUSIVE CASE!}}{4}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-3001r2}{}{\ignorespaces Diagram showing a bathtub that is being filled with successive equal amounts of water will overflow.}}{figure}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-9}{}{Test for Divergence (Theorem 5.8):}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-10}{Test for Divergence (Theorem 5.8):}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-11}{}{Theorem 5.7: }}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-12}{Theorem 5.7: }}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-13}{}{Geometric Series:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-14}{Geometric Series:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-15}{}{Harmonic Series:}}{7}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-7000}{QQ2-1-16}{Harmonic Series:}}{8}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-17}{}{Problems for Group Work:}}{9}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-8000}{QQ2-1-18}{Problems for Group Work:}}{9}\relax 
