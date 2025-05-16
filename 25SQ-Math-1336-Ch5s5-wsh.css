@@ -30,7 +30,6 @@
 .cmssbx-10{ font-family: sans-serif; font-weight: bold;}
 .cmssbx-10{ font-family: sans-serif; font-weight: bold;}
 .cmssbx-10{ font-family: sans-serif; font-weight: bold;}
-.rm-lmvtk-10x-x-144{font-size:144%; font-family: monospace;}
 .cmssi-10{ font-family: sans-serif; font-style: oblique;}
 .cmssi-10{ font-family: sans-serif; font-style: oblique;}
 .cmssi-10{ font-family: sans-serif; font-style: oblique;}
@@ -156,8 +155,5 @@ P.fancyvrb {white-space: nowrap; margin:0em;}
 dd.enumerate {margin-left: 2em;}
 dt.enumerate {float:left; clear:left; margin-right:0.5em; margin-left:0.5em; text-align:right; }
 #colorbox1{background-color: rgb(191,191,191);}
-#textcolor3{color:}
-#textcolor4{color:}
-#textcolor5{color:}
 /* end css.sty */
 

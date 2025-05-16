@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  16 MAY 2025 10:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=latex 2015.5.24)  16 MAY 2025 10:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1900,13 +1900,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmvtt on input line 54
 .
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/ot1lmvtt.fd
 File: ot1lmvtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OT1/lmvtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/lmvtt/b/n' tried instead on input line 65.
-
-l.65 --- TeX4ht warning --- missing \Configure{HColor}{sblack}{...} (in LaTeX: 
-rgb 0.22354 0.22354 0.22354) ---
-[1] [2] [3
+) [1] [2] [3
 
 ]
 l.103 --- TeX4ht warning --- Cannot determine size of graphic in Ch8s4-ASET.png
@@ -1932,12 +1926,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 235.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 38921 strings out of 493090
- 853514 string characters out of 6134868
- 1117878 words of memory out of 5000000
- 41459 multiletter control sequences out of 15000+600000
- 21399 words of font info for 40 fonts, out of 8000000 for 9000
+ 38944 strings out of 493090
+ 853939 string characters out of 6134868
+ 1117905 words of memory out of 5000000
+ 41484 multiletter control sequences out of 15000+600000
+ 17859 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,6n,83p,10984b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 25SQ-Math-1336-Ch5s5-wsh.dvi (267 pages, 104588 bytes).
+Output written on 25SQ-Math-1336-Ch5s5-wsh.dvi (267 pages, 103952 bytes).

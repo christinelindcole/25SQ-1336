@@ -3,6 +3,11 @@ htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
 htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
 htfcss: cmssdc  font-family: sans-serif;
 htfcss: cmssi  font-family: sans-serif; font-style: oblique;
+htfcss: cmss   font-family: sans-serif;
+htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
+htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
+htfcss: cmssdc  font-family: sans-serif;
+htfcss: cmssi  font-family: sans-serif; font-style: oblique;
 htfcss: rm-lmbo  font-style: oblique;
 htfcss: rm-lmbx  font-weight: bold;
 htfcss: rm-lmbxi  font-style:italic; font-weight: bold;
@@ -35,11 +40,6 @@ htfcss: rm-lmvtl  font-weight: light; font-family: monospace;
 htfcss: rm-lmvtlo  font-weight: light; font-style: oblique; font-family: monospace;
 htfcss: rm-lmvtt  font-family: monospace;
 htfcss: rm-lmvtto  font-style: oblique; font-family: monospace;
-htfcss: cmss   font-family: sans-serif;
-htfcss: cmssbx  font-family: sans-serif; font-weight: bold;
-htfcss: cmssbxo  font-family: sans-serif; font-style: oblique; font-weight: bold;
-htfcss: cmssdc  font-family: sans-serif;
-htfcss: cmssi  font-family: sans-serif; font-style: oblique;
 htfcss: cmbsy font-weight: bold;
 htfcss: cmbsy font-weight: bold;
 htfcss: cmbsy font-weight: bold;
@@ -181,10 +181,7 @@ Css: P.fancyvrb {white-space: nowrap; margin:0em;}
 Css: dd.enumerate {margin-left: 2em;}
 Css: dt.enumerate {float:left; clear:left; margin-right:0.5em; margin-left:0.5em; text-align:right; }
 Css: #colorbox1{background-color: rgb(191,191,191);}
-Css: #textcolor3{color:}
-Css: #textcolor4{color:}
 File: Ch8s4-ASET.png
-Css: #textcolor5{color:}
 --- characters ---
 Font("cmex","10","10","100")
 Font("cmr","5","5","100")
@@ -211,5 +208,4 @@ Font("msbm","5","5","100")
 Font("rm-lmvtt","10","10","248")
 Font("rm-lmvtt","10","10","172")
 Font("cmssbx","10","10","100")
-Font("rm-lmvtk","10","10","144")
 Font("cmssi","10","10","100")
