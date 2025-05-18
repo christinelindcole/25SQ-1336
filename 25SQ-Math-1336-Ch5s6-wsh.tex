@@ -1,0 +1,266 @@
+% Instructions to change to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace all: \begin{minipage}% \end{minipage} %\begin{multicols}  %\end{multicols} 
+% \columnbreak
+ %	%% \begin{framed} %\end{framed} %%\hrule
+% Replace \mathbf with	\boldsymbol
+% Replace $$ with \[ or \]and $ with \( or \)
+% Enclose graphics in figure environments and add captions
+% 			search \includegraphics
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second, for each figure: inkscape "filename-figure1.pdf" -o "filename-figure1.png"
+% Third: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+\documentclass[10pt]{article}
+
+%\usepackage{tikz, pgf,pgfplots,wasysym,array}
+%\usepackage{wasysym,array}
+
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.12}
+\usepackage{myexternalize}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{framed}
+\usepackage[none]{hyphenat}
+
+\input{../../../common/1336_header_test.tex}
+\begin{document}
+
+\graphicspath{{Series_Strategies/}}
+
+\newcommand{\an}{\lbrace a_n \rbrace}
+\newcommand{\Sum}{\sum_{n=1}^\infty }
+\newcommand{\SumZero}{\sum_{n=0}^\infty }
+
+\everymath{\displaystyle}
+
+\renewcommand{\myTitle}{	MATH 1336: Calculus III}
+
+\renewcommand{\mySubTitle}{Section 5.6: Ratio Test \& Root Test}%, and\\ Strategies for Testing Series}% \vspace*{-.25in}}
+%~\hfill Name: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\lectTitle{\vspace*{-.5in}\myTitle}{\vspace*{.1in}\mySubTitle \vspace*{-.2in}}
+
+
+
+
+
+%\hspace*{-.8in}%\begin{minipage}{1.25\textwidth}
+
+\setlength{\columnseprule}{.4pt}
+\setlength{\columnsep}{3em}
+
+%\begin{framed}
+\section*{Sections 5.5 \& 5.6 - More Series Tests!: }
+Both of the tests listed below can be used on series that have some negative terms.\\
+Both tests are built on the idea of comparing how fast the terms are going to zero with geometric series.\\
+\textbf{Note: Both tests will be inconclusive when applied to p-series or series with terms that are rational functions!}\\
+
+
+%\hrule
+\vspace*{.1in}
+
+%\begin{multicols}{2}
+
+
+
+\section*{Ratio Test:}
+Consider the series \(\sum a_n\). 
+ \begin{enumerate}[(i)] 
+ \item If \(\lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n}\right| = L < 1\):\\
+  then \(\sum a_n\) is absolutely convergent.\\ 
+  \item If \(\lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n}\right| = L > 1\)
+  -OR- 
+  \(\lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n}\right| =\infty\):\\
+   then \(\sum a_n\) is divergent.\\
+\item \(\lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n}\right| = 1\):\\
+ then the test is is inconclusive.\\
+  (Try something else!)
+ \end{enumerate} 
+ ~\\
+ \underline{\textbf{Useful for Series:}}\\
+ that contain a factorial
+ %\end{multicols}%\( \\~\\~\\
+ 
+% \vspace*{.25in}
+ %\columnbreak
+\section*{Root Test:}
+Consider the series \(\sum a_n\). 
+ \begin{enumerate}[(i)] 
+ \item If \(\lim_{n\rightarrow \infty} \sqrt[n]{|a_n|}= L < 1\):\\
+  then \(\sum a_n\) is absolutely convergent. %\vspace*{.1in}
+  \item If \(\lim_{n\rightarrow \infty} \sqrt[n]{|a_n|} = L > 1\)
+  -OR- 
+  \(\lim_{n\rightarrow \infty} \sqrt[n]{|a_n|}=\infty\):\\
+   then \(\sum a_n\) is divergent.  %\vspace*{.15in}
+\item \(\lim_{n\rightarrow \infty} \sqrt[n]{|a_n|} = 1\):\\
+ then the test is is inconclusive.\\
+  (Try something else!)
+ \end{enumerate} 
+  \underline{\textbf{Useful for Series:}}\\
+ where the whole expression is raised to the  \(n^{th}\) power
+ % \vspace*{.25in}
+
+%\end{multicols}
+
+%\end{framed}
+
+%\end{minipage}
+
+\section*{Examples we will work through together:}
+%\setlength{\columnseprule}{.4pt}
+%\setlength{\columnsep}{3em}
+%\begin{multicols}{2}
+
+Determine the Convergence of the following Series:
+\begin{enumerate}[{Example }1:]
+%\addtocounter{enumi}{3}
+
+\item  \(\qquad\Sum \frac{10^n}{n!}\)
+\vfill
+
+\item  \(\qquad\Sum \frac{(-2)^n}{n^2}\)
+\vfill
+
+
+
+\pagebreak
+
+\hspace{-.75in} Use the Ratio Test on the following Series:
+
+\item  \(\qquad\Sum \frac{1}{n^2}\)
+\vfill
+
+\item  \(\qquad\Sum \frac{1}{n}\)
+
+%\vspace*{1in} %
+\vfill
+
+%\pagebreak
+\item \(\qquad\Sum	\frac{n^n}{n!}\)
+%\vspace*{.75in} %
+\vfill
+
+%\columnbreak
+%\vspace*{.1in}
+\hspace*{-.75in}Use the Root Test on the following Series:
+
+\item  \(\qquad\Sum \frac{(-2)^n}{n^n}\)
+
+%\vspace*{1in} %
+\vfill
+\item \(\qquad\Sum	\left(\frac{n^2+1}{2n^2+1}\right)^n\)
+%\vspace*{.75in} %
+\vfill
+
+\end{enumerate}
+
+%\end{multicols}
+
+\pagebreak
+
+\section*{Problems for Group Work:}
+
+For each of the following series, apply either the Ratio Test or the Root Test, or state that one of those tests is inconclusive.
+
+
+\begin{enumerate}
+
+\item \(\qquad\SumZero (-1)^{n}\frac{n!}{1000^n}\) \label{prob1}
+% Problem \ref{prob1}: Diverges
+
+\vfill
+
+\item \(\qquad\Sum \frac{2^n}{n^{2n}} \) \label{prob2}
+% Problem \ref{prob2}: Converges Absolutely
+
+\vfill
+
+\item \(\qquad\Sum \frac{n}{n^2+1}\) \label{prob3}
+% Problem \ref{prob3}: Ratio Test is Inconclusive
+
+\vfill
+
+%\item \(\qquad\Sum \frac{n^{40}}{n!}\) \label{prob4}
+%% Problem \ref{prob4}: Converges Absolutely
+%
+%
+%\vfill
+
+\item \(\qquad\SumZero \left(\frac{5n}{3n+1}\right)^n\) \label{prob5}
+% Problem \ref{prob5}: Diverges
+
+
+\vfill
+
+
+%\vfill
+
+\rotatebox{180}{
+%\begin{minipage}{\textwidth}
+\underline{Answers:}\\\textbf{Problem \ref{prob1}:} Diverges, 
+\textbf{Problem \ref{prob2}:} Converges Absolutely, 
+\textbf{Problem \ref{prob3}:} Ratio Test is Inconclusive, 
+%\textbf{Problem \ref{prob4}:} Converges Absolutely,
+\\\textbf{Problem \ref{prob5}:} Diverges
+
+%\end{minipage}
+}
+
+
+
+\end{enumerate}
+
+
+%
+%\pagebreak
+%
+%\input{Series_Strategies/convergence_test_summary}
+%
+%\pagebreak
+%
+%\section*{Problems for Group Work}
+%
+%For each of the following series, state which test you would use to determine the convergence or divergence behavior, and explain why.
+%
+%(You do not have to carry out the test in detail, but follow the argument long enough to make sure your reasoning would work.)
+%
+%\begin{enumerate}
+%\begin{multicols}{2}
+%
+%\item \(\Sum \frac{n-1}{2n+1}\)\vspace*{.25in}
+%
+%\item \(\Sum \frac{\sqrt{n^3+1}}{3n^3+4n^2+2}\)\vspace*{.25in}
+%
+%\item \(\Sum ne^{-n^2}\)\vspace*{.25in}
+%
+%\item \(\Sum (-1)^{n}\frac{n^3}{n^4+1}\)\vspace*{.25in}
+%
+%\item \(\Sum \frac{2^k}{k!}\)\vspace*{.25in}
+%
+%\item \(\Sum \frac{1}{2+3^n}\)\vspace*{.25in}
+%\end{multicols}
+%
+%\section*{Additional Series For Practice}
+%Solutions will be posted on Canvas. (Don't bother clicking in the blue boxes below, they won't work.)
+%
+%\includegraphics[width=\textwidth]{Stewart_Probs}
+%
+%\end{enumerate}
+
+\end{document}
