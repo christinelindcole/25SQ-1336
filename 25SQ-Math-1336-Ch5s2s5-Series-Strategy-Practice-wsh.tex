@@ -1,0 +1,86 @@
+% Instructions to change to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace all: \begin{minipage}% \end{minipage} %\begin{multicols}  %\end{multicols} 
+% \columnbreak
+ %	%% \begin{framed} %\end{framed} %%\hrule
+% Replace \mathbf with	\boldsymbol
+% Replace $$ with \[ or \]and $ with \( or \)
+% Enclose graphics in figure environments and add captions
+% 			search \includegraphics
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second, for each figure: inkscape "filename-figure1.pdf" -o "filename-figure1.png"
+% Third: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+\documentclass[10pt]{article}
+
+%\usepackage{tikz, pgf,pgfplots,wasysym,array}
+%\usepackage{wasysym,array}
+
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.12}
+\usepackage{myexternalize}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{framed}
+\usepackage[none]{hyphenat}
+
+\input{../../../common/1336_header_test.tex}
+\begin{document}
+
+\newcommand{\an}{\lbrace a_n \rbrace}
+\newcommand{\Sum}{\sum_{n=1}^\infty }
+
+\everymath{\displaystyle}
+
+\renewcommand{\myTitle}{MATH 1336: Calculus III}
+
+\renewcommand{\mySubTitle}{Sections 5.2-5.5: Series Tests Practice, Round 2}
+% NOTE: This activity is meant to be used before covering the Alternating Series Test, Absolute/Conditional Convergence, and Ratio/Root Tests.
+%~\hfill Name: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\lectTitle{\vspace*{-.5in}\myTitle}{\vspace*{.1in}\mySubTitle \vspace*{-.25in}}
+
+\section*{ Series Testing Strategy Practice, Round 2:\\(Test 2 Content) }
+%\textbf{Be sure to fully justify your reasoning as a part of your solutions.}\\
+% The answers are upside-down on the bottom of this page.
+
+%\callout{
+
+For each of the following series, state which test you would use to determine the convergence or divergence behavior. % If none of the tests from Sections 5.2-5.5 can be used on the series, explain why.
+
+(You do not have to carry out the test in detail, but follow the argument long enough to make sure your reasoning would work.)
+%}
+
+
+\begin{enumerate}
+
+\item \(\qquad \sum_{n=1}^\infty \frac{1}{\sqrt[5]{n}}\)\vfill
+
+\item \(\qquad \sum_{n=1}^\infty \frac{n^2-1}{3n^4+1}\)\vfill
+
+\item \(\qquad \sum_{n=1}^\infty \frac{\cos(n)}{n^2+1}\)\vfill
+
+\item \(\qquad \sum_{n=1}^\infty \frac{1+3^n}{2^n}\)\vfill
+
+\item \(\qquad \sum_{n=1}^\infty \frac{(-1)^{n+1}}{2n+1}\)\vfill
+
+
+
+\end{enumerate}
+
+
+\end{document}
