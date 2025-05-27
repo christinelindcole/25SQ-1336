@@ -1,0 +1,973 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="25SQ-Math-1336-Ch6s1-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 59--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 59--><p class="noindent" >
+</p><!--l. 59--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 59--><p class="noindent" ></p><!--l. 59--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248"> MATH 1336: Calculus III</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Section 6.1: Intro to Power Series &#x0026; Series Tests Practice, Round 3</span></p></div>      </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Power Series Deﬁnition:</h3>
+<!--l. 78--><p class="noindent" >A series of the form:
+</p>
+<div class="math-display"><!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                 <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mn>3</mn></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo>…</mo>
+</mrow></math></div>
+<!--l. 81--><p class="nopar" > is called a <span 
+class="cmssbx-10">Power Series centered at </span><!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>.<br 
+class="newline" />(Power Series in <!--l. 83--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+Power Series about <!--l. 83--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>a</mi></mrow></math>)<br 
+class="newline" />
+</p><!--l. 85--><p class="noindent" ><span class="underline"><span 
+class="cmssbx-10">Notes:</span></span> </p>
+     <ul class="itemize1">
+     <li class="itemize">A Power Series <span 
+class="cmssbx-10">always </span>converges at the center: <!--l. 87--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>.
+     </li>
+     <li class="itemize">Adopt the convention that <!--l. 88--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mn>0</mn></mrow><mrow 
+><mn>0</mn></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>.
+     </li>
+     <li class="itemize">By deﬁnition: <!--l. 89--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mn>0</mn><mo 
+class="MathClass-punc">!</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>.</li></ul>
+<a 
+ id="Q1-1-3"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Power Series Convergence Theorem:</h4>
+<!--l. 97--><p class="noindent" >For a given Power Series, <!--l. 97--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>,
+there are three possibilities:
+    </p><dl class="enumerate"><dt class="enumerate">
+ (i) </dt><dd 
+class="enumerate">The series converges <span 
+class="cmssi-10">only </span>when <!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>.
+    </dd><dt class="enumerate">
+ (ii) </dt><dd 
+class="enumerate">The series converges for all <!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>.
+    </dd><dt class="enumerate">
+                                                                                         
+                                                                                         
+ (iii) </dt><dd 
+class="enumerate">There is some <!--l. 101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></mrow></math>
+    such that the series converges if <!--l. 101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">&#x003C;</mo> <mi 
+>R</mi></mrow></math>
+    and diverges if <!--l. 101--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">&#x003E;</mo> <mi 
+>R</mi></mrow></math>.</dd></dl>
+_________________________________________________________________________________________<a 
+ id="Q1-1-5"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a>Radius &#x0026; Interval of Convergence:</h4>
+<!--l. 113--><p class="noindent" ><!--l. 113--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi></mrow></math> is the
+<span 
+class="cmssbx-10">radius of convergence</span>, as described above.<br 
+class="newline" />The <span 
+class="cmssbx-10">interval of convergence</span>, <!--l. 114--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>I</mi></mrow></math>,
+is the interval of all the <!--l. 114--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi><mo 
+class="MathClass-bin">−</mo></mrow></math>values
+where the series converges. </p><hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-3001r1"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 118--><p class="noindent" ><img 
+src="Ch6s1-Power-Series-Interval.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 1: </span><span  
+class="content">Interval of Convergence Diagram</span></div><!--tex4ht:label?: x1-3001r1 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<!--l. 123--><p class="noindent" ><span class="underline"><span 
+class="cmssbx-10">Strategy:</span></span><br 
+class="newline" />
+     </p><dl class="enumerate"><dt class="enumerate">
+  1. </dt><dd 
+class="enumerate">Use the Ratio Test (or Root Test) to ﬁnd the radius of convergence.
+     </dd><dt class="enumerate">
+  2. </dt><dd 
+class="enumerate">If you need to know the convergence behavior at the endpoints of the interval of convergence, use another
+     series test!</dd></dl>
+<a 
+ id="Q1-1-8"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Motivating Example (pre-class video):</h3>
+<!--l. 149--><p class="noindent" >Example 1: For which values of <!--l. 149--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+does the following series converge? <!--l. 150--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> </mrow></math>
+</p><!--l. 152--><p class="noindent" >Using the Ratio Test, we found that:
+</p>
+<div class="par-math-display"><!--l. 155--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+               <munder class="msub"><mrow 
+><mo class="qopname">lim</mo></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">→</mo><mi 
+>∞</mi></mrow></munder 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mfrac><mrow 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+></mrow>
+  <mrow 
+><msub><mrow 
+><mi 
+>a</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+></mrow></mfrac>  </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo class="qopname"> lim</mo></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">→</mo><mi 
+>∞</mi></mrow></munder 
+>  <mfrac><mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+<mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo><munder class="msub"><mrow 
+><mo class="qopname"> lim</mo></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">→</mo><mi 
+>∞</mi></mrow></munder 
+><msup><mrow 
+><mfenced separators="" 
+open="("  close=")" ><mrow>  <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn> 
+<mi 
+>n</mi></mrow></mfrac></mrow></mfenced> </mrow><mrow 
+><mn>2</mn></mrow></msup 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>L</mi><mo 
+class="MathClass-punc">,</mo>
+</mrow></math></div>
+<!--l. 157--><p class="nopar" >
+</p><!--l. 159--><p class="noindent" >so the series converges when <!--l. 159--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">&#x003C;</mo> <mn>1</mn></mrow></math>, diverges
+when <!--l. 159--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>1</mn></mrow></math>, and the test is inconclusive
+for <!--l. 159--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>, indicating that the <span 
+class="cmssbx-10">Radius</span>
+<span 
+class="cmssbx-10">of Convergence </span>is <!--l. 159--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>. In order to
+determine the convergence at <!--l. 159--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">±</mo><mn>1</mn></mrow></math>,
+we must use other series tests: <span class="underline"><!--l. 162--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>:</span><br 
+class="newline" />
+</p>
+                                                                                         
+                                                                                         
+<div class="math-display"><!--l. 163--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                 <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><mfrac><mrow 
+><msup><mrow 
+><mn>1</mn></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>
+</mrow></math></div>
+<!--l. 165--><p class="nopar" > convergent <!--l. 166--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>p</mi><mo 
+class="MathClass-bin">−</mo></mrow></math>series<br 
+class="newline" /><!--l. 167--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">⇒</mo></mrow></math> series
+converges at <!--l. 167--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>
+</p><!--l. 170--><p class="noindent" ><span class="underline"><!--l. 170--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></math>:</span><br 
+class="newline" />
+</p>
+<div class="math-display"><!--l. 171--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                        <munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+  <mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>   <mo 
+class="MathClass-punc">,</mo><mspace width="2em" class="qquad"/><mstyle 
+class="text"><mtext  >so</mtext></mstyle><mspace width="2em" class="qquad"/><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+>∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+  <mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>   </mrow></mfenced> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+> <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>
+</mrow></math></div>
+<!--l. 173--><p class="nopar" > converges by A.S.T. or absolute convergence <br 
+class="newline" /><!--l. 175--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">⇒</mo></mrow></math> series converges at
+<!--l. 175--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></math> Therefore, the <span 
+class="cmssbx-10">Interval</span>
+<span 
+class="cmssbx-10">of Convergence </span>is <!--l. 178--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mrow ><mo 
+class="MathClass-open">[</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>1</mn><mo 
+class="MathClass-punc">,</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">]</mo></mrow></mrow></math>.
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-10"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-5000"></a>Examples we will work through together:</h3>
+<!--l. 196--><p class="noindent" >Find the radius and interval of convergence for the following series:
+          </p><dl class="enumerate"><dt class="enumerate">
+Example 2: </dt><dd 
+class="enumerate"><!--l. 204--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo><mspace width="1em" class="nbsp" /><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>
+          </dd><dt class="enumerate">
+Example 3: </dt><dd 
+class="enumerate"><!--l. 209--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn><mi 
+>n</mi></mrow></msup 
+></mrow>
+<mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">!</mo></mrow></mfrac></mrow></math>
+          </dd><dt class="enumerate">
+Example 4: </dt><dd 
+class="enumerate"><!--l. 212--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+     <mrow 
+><mi 
+>n</mi></mrow></mfrac>    </mrow></math>
+          </dd></dl>
+                                                                                         
+                                                                                         
+<a 
+ id="Q1-1-12"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-6000"></a>Problems for Group Work</h3>
+<!--l. 227--><p class="noindent" >Find the radius and interval of convergence for the following power series:
+     </p><dl class="enumerate"><dt class="enumerate">
+  1. </dt><dd 
+class="enumerate">
+     <!--l. 232--><p class="noindent" ><!--l. 232--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><mi 
+>n</mi><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mn>5</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+   <mrow 
+><msup><mrow 
+><mn>4</mn></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msup 
+></mrow></mfrac>    </mrow></math>
+     </p></dd><dt class="enumerate">
+  2. </dt><dd 
+class="enumerate"><!--l. 241--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>5</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>1</mn><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+         <mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>         </mrow></math>
+     </dd><dt class="enumerate">
+  3. </dt><dd 
+class="enumerate"><!--l. 247--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>
+                                                                                         
+                                                                                         
+     </dd><dt class="enumerate">
+  4. </dt><dd 
+class="enumerate"><!--l. 255--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+    <mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></mfrac>     </mrow></math>
+     </dd><dt class="enumerate">
+  5. </dt><dd 
+class="enumerate"><!--l. 261--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mspace width="2em" class="qquad"/><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>
+     </dd></dl>
+<a 
+ id="Q1-1-14"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-7000"></a>Series Testing Strategy Practice, Round 3 (All Series Tests!):</h3>
+<!--l. 276--><p class="noindent" >For each of the following series, state which test you would use to determine the convergence or divergence behavior, and
+explain why.
+</p><!--l. 278--><p class="noindent" >(You do not have to carry out the test in detail, but follow the argument long enough to make sure your reasoning would
+work.)
+     </p><dl class="enumerate"><dt class="enumerate">
+  1. </dt><dd 
+class="enumerate"><!--l. 283--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+>  <mfrac><mrow 
+><mi 
+>n</mi></mrow>
+<mrow 
+><mn>2</mn><mi 
+>n</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow></mfrac></mrow></math>
+     </dd><dt class="enumerate">
+  2. </dt><dd 
+class="enumerate"><!--l. 285--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow>
+  <mrow 
+><msqrt><mrow><mi 
+>n</mi></mrow></msqrt></mrow></mfrac>  </mrow></math>
+     </dd><dt class="enumerate">
+  3. </dt><dd 
+class="enumerate"><!--l. 287--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+>   <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><msqrt><mrow><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>3</mn> </mrow> </msup 
+> <mo 
+class="MathClass-bin">−</mo> <msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow></msqrt></mrow></mfrac></mrow></math>
+     </dd><dt class="enumerate">
+  4. </dt><dd 
+class="enumerate"><!--l. 289--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>k</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+> <mfrac><mrow 
+><msup><mrow 
+><mn>2</mn></mrow><mrow 
+><mi 
+>k</mi></mrow></msup 
+><mi 
+>k</mi><mo 
+class="MathClass-punc">!</mo></mrow>
+<mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>k</mi> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">!</mo></mrow></mfrac></mrow></math>
+     </dd></dl>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+

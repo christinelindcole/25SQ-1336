@@ -1,0 +1,298 @@
+% Instructions to change to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace all: \begin{minipage}% \end{minipage} %\begin{multicols}  %\end{multicols} 
+% \columnbreak
+ %	%% \begin{framed} %\end{framed} %%\hrule
+% Replace \mathbf with	\boldsymbol
+% Replace $$ with \[ or \]and $ with \( or \)
+% Enclose graphics in figure environments and add captions
+% 			search \includegraphics
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second, for each figure: inkscape "filename-figure1.pdf" -o "filename-figure1.png"
+% Third: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+\documentclass[10pt]{article}
+
+%\usepackage{tikz, pgf,pgfplots,wasysym,array}
+%\usepackage{wasysym,array}
+
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.12}
+\usepackage{myexternalize}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{framed}
+\usepackage[none]{hyphenat}
+
+\input{../../../common/1336_header_test.tex}
+\begin{document}
+
+
+
+\newcommand{\an}{\lbrace a_n \rbrace}
+\newcommand{\Sum}{\sum_{n=1}^\infty }
+\newcommand{\Sumzero}{\sum_{n=0}^\infty }
+\newcommand{\limn}{\lim_{n\rightarrow\infty}}
+
+\everymath{\displaystyle}
+
+\renewcommand{\myTitle}{\	MATH 1336: Calculus III}
+
+\renewcommand{\mySubTitle}{Section 6.1: Intro to Power Series
+\& Series Tests Practice, Round 3}% \vspace*{-.25in}}
+%~\hfill Name: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\lectTitle{\vspace*{-.6in}\myTitle}{\vspace*{.1in}\mySubTitle \vspace*{-.3in}}
+
+\renewcommand{\mySubTitle}{Section 6.1: Intro to Power Series\\
+\& Series Tests Practice, Round 3}% \vspace*{-.25in}}
+
+
+%\hspace*{-.8in}%\begin{minipage}{1.25\textwidth}
+
+\setlength{\columnseprule}{.4pt}
+\setlength{\columnsep}{3em}
+
+%\begin{framed}
+%\textbf{New Tests \& Theorems:} 
+
+%\begin{multicols}{2}
+
+
+
+\section*{Power Series Definition:}
+A series of the form:
+\[
+\Sumzero c_n (x-a)^n = c_0 + c_1 (x-a) + c_2 (x-a)^2 + c_3 (x-a)^3 +\ldots
+\]
+is called a \textbf{Power Series centered at \(x=a\)}.\\
+ (Power Series in \((x-a)\), Power Series about \(a\))\\
+ 
+\underline{\textbf{Notes:}}
+\begin{itemize}
+\item A Power Series \textbf{always} converges at the center: \(x=a\).
+\item Adopt the convention that \(0^0 = 1\).
+\item By definition: \(0! = 1\).
+\end{itemize}
+ %%\end{multicols}%\( \\~\\~\\
+ 
+% \vspace*{.25in}
+ %\columnbreak
+ 
+\subsection*{Power Series Convergence Theorem:}
+For a given Power Series, \(\Sumzero c_n (x-a)^n\), there are three possibilities:
+ \begin{enumerate}[(i)] 
+ \item The series converges \textit{only} when \(x=a\). 
+ \item The series converges for all \(x\).
+ \item There is some \(R>0\) such that the series converges if \(|x-a|<R\) and diverges if \(|x-a|>R\).
+ \end{enumerate}
+ 
+ %\end{multicols}
+ 
+ \hrule
+ \vspace*{.1in}
+ 
+\subsection*{Radius \& Interval of Convergence:}
+%\begin{multicols}{2}
+
+
+ \(R\) is the \textbf{radius of convergence}, as described above.\\
+ The \textbf{interval of convergence}, \(I\), is the interval of all the \(x-\)values where the series converges.
+ % \vspace*{.25in}
+\begin{figure}[!h]
+\centering
+ \includegraphics[width=.75\columnwidth]{Ch6s1-Power-Series-Interval.png}
+ \caption{Interval of Convergence Diagram}
+\end{figure}
+ %\columnbreak
+ 
+ \underline{\textbf{Strategy:}}\\
+ \begin{enumerate}
+ \item Use the Ratio Test (or Root Test) to find the radius of convergence.
+ \item If you need to know the convergence behavior at the endpoints of the interval of convergence, use another series test!
+ \end{enumerate}
+
+%\end{multicols}
+%\vspace*{.2in}
+
+%\end{framed}
+
+%\end{minipage}
+
+%\vfill
+
+%\section*{Examples we will work through together:}
+%Find the radius and interval of convergence for the following series:
+
+\vspace*{-.1in}
+
+\section*{Motivating Example (pre-class video):}
+
+%\begin{enumerate}[{Example }1:]
+
+\vspace*{-.1in}
+
+Example 1:  For which values of \(x\) does the following series converge?
+ \( \qquad \Sum \frac{x^n}{n^2}\)
+ 
+Using the Ratio Test, we found that:
+
+
+\[
+\limn \left| \frac{a_{n+1}}{a_n} \right| = \limn \frac{n^2}{(n+1)^2}|x| = \limn \left( \frac{1}{1+\tfrac{1}{n} }\right)^2 |x| = |x| = L,
+\]
+
+so the series converges when \(|x|<1\), diverges when \(|x|>1\), and the test is inconclusive for \(|x|=1\), indicating that the \textbf{Radius of Convergence} is \(R=1\). In order to determine the convergence at \(x=\pm 1\), we must use other series tests:
+\vspace*{-.1in}
+%\begin{multicols}{2}
+\underline{\(x=1\):}\\
+\[
+\Sum \frac{1^n}{n^2} = \Sum \frac{1}{n^2}
+\]
+convergent \(p-\)series\\
+\(\Rightarrow\) series converges at \(x=1\)
+
+%\columnbreak
+\underline{\(x=-1\):}\\
+\[
+\Sum \frac{(-1)^n}{n^2}, \qquad \text{so} \qquad  \Sum \left|\frac{(-1)^n}{n^2}\right| = \Sum \frac{1}{n^2}
+\]
+converges by A.S.T. or absolute convergence \\
+\(\Rightarrow\) series converges at \(x=-1\)
+%\end{multicols}
+\vspace*{-.1in}
+Therefore,  the \textbf{Interval of Convergence} is \([-1,1]\).
+%\vspace*{-1in}
+
+% \vfill
+ 
+%\end{enumerate}
+
+
+ 
+ \pagebreak
+
+
+
+\section*{Examples we will work through together:}
+
+
+
+%\hspace*{-.75in} 
+Find the radius and interval of convergence for the following series:
+
+
+
+
+\begin{enumerate}[{Example }1:]
+\addtocounter{enumi}{1}
+
+\item \( \qquad \Sumzero n!\ x^n\)
+\vfill
+
+%\pagebreak
+
+\item \( \qquad \Sum \frac{x^{2n}}{(2n)!}\)
+\vfill
+
+\item \( \qquad \Sum \frac{(x-1)^n}{n}\)
+\vfill
+
+
+%
+%\item The \(p-\)Power Series: \(\qquad \Sum	\frac{x^n}{n^p}\)
+%\vfill
+%
+%\item \(\Sumzero \frac{n(x+5)^n}{4^{n+1}}\)
+%\vfill
+\end{enumerate}
+
+\pagebreak
+
+\section*{Problems for Group Work}
+Find the radius and interval of convergence for the following power series:
+\begin{enumerate}
+\item %Find the radius and interval of convergence for the following power series:
+
+%\begin{multicols}{2}
+\(\qquad \Sumzero \frac{n(x+5)^n}{4^{n+1}}\)
+\vfill
+
+
+%\vspace*{2.25in}
+
+%\begin{multicols}{2}
+%\begin{enumerate}
+
+\item \(\qquad \frac{(-5)^n (x-10)^n}{n!}\)
+
+\vfill
+
+%\vspace*{2.25in}
+
+\item \(\qquad\Sumzero e^n(x-2)^n\)
+
+\vfill
+
+%\vspace*{2.25in}
+
+\pagebreak
+
+\item \(\qquad\Sum \frac{(-2)^n x^n}{n^2}\)
+
+\vfill
+
+%\vspace*{2.25in}
+
+\item \(\qquad\Sumzero x^n\)
+
+\vfill
+
+%\vspace*{2.25in}
+
+%\end{enumerate}
+%\end{multicols}
+%\vfill
+
+\end{enumerate}
+
+%\pagebreak
+
+\section*{Series Testing Strategy Practice, Round 3 (All Series Tests!):}
+For each of the following series, state which test you would use to determine the convergence or divergence behavior, and explain why.
+
+(You do not have to carry out the test in detail, but follow the argument long enough to make sure your reasoning would work.)
+
+\begin{enumerate}
+%\begin{multicols}{2}
+
+\item \(\Sum \frac{n}{2n+1}\)\vspace*{.75in}
+
+\item \(\Sum \frac{(-2)^n}{\sqrt{n}}\)\vspace*{.75in}
+
+\item \(\Sum \frac{1}{\sqrt{n^3-n^2}}\)\vspace*{.75in}
+
+\item \(\sum_{k=1}^\infty \frac{2^k k!}{(k+2)!}\)\vspace*{.75in}
+%\end{multicols}
+
+%\vfill
+
+\end{enumerate}
+
+
+%\end{enumerate}
+\end{document}
