@@ -1,0 +1,209 @@
+% Instructions to change to html version:
+% Comment out:
+%  minipage, multicols,columnbreak, mathbf, hrule
+% Replace all: \begin{minipage}% \end{minipage} %\begin{multicols}  %\end{multicols} 
+% \columnbreak
+ %	%% \begin{framed} %\end{framed} %%\hrule
+% Replace \mathbf with	\boldsymbol
+% Replace $$ with \[ or \]and $ with \( or \)
+% Enclose graphics in figure environments and add captions
+% 			search \includegraphics
+% Re-tag \df environments as sections, subsections, etc.
+% Command Line Code to Create html version:
+%First: pdflatex -shell-escape filename.tex                                   
+%Second, for each figure: inkscape "filename-figure1.pdf" -o "filename-figure1.png"
+% Third: htlatex filename.tex "ht5mjlatex.cfg, charset=utf-8" " -cunihtf -utf8"
+
+\documentclass[10pt]{article}
+
+%\usepackage{tikz, pgf,pgfplots,wasysym,array}
+%\usepackage{wasysym,array}
+
+\usepackage{amsmath,amssymb}
+\usepackage[hidelinks]{hyperref}
+
+\ifdefined\HCode
+  \def\pgfsysdriver{pgfsys-tex4ht-updated.def}
+\fi 
+%\ifdefined\HCode
+%  \def\pgfsysdriver{pgfsys-dvisvgm4ht.def}
+%\fi 
+\usepackage{tikz}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{pgfplots}
+
+\pgfplotsset{compat=1.12}
+\usepackage{myexternalize}
+\usetikzlibrary{calc,decorations.markings,arrows}
+\usepackage{framed}
+\usepackage[none]{hyphenat}
+
+\input{../../../common/1336_header_test.tex}
+\begin{document}
+
+
+
+\newcommand{\an}{\lbrace a_n \rbrace}
+\newcommand{\Sum}{\sum_{n=1}^\infty }
+\newcommand{\Sumzero}{\sum_{n=0}^\infty }
+
+\everymath{\displaystyle}
+
+\renewcommand{\myTitle}{	MATH 1336: Calculus III}
+
+\renewcommand{\mySubTitle}{Section 6.2: Fun with Power Series! }
+%~\hfill Name: \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}
+
+\lectTitle{\vspace*{-.5in}\myTitle}{\vspace*{.1in}\mySubTitle \vspace*{-.2in}}
+
+%\rfoot{{\texttt{Page \thepage~of 1}}}
+
+
+%\hspace*{-.8in}%\begin{minipage}{1.25\textwidth}
+
+\setlength{\columnseprule}{.4pt}
+\setlength{\columnsep}{3em}
+
+%\begin{framed}
+%\textbf{New Tests \& Theorems:} 
+
+%\begin{multicols}{2}
+\section*{Section 6.2: Representing Functions with Power Series, AKA: Fun with Power Series!}
+The theorem below tells us that we can treat Power Series just like more familiar functions, as long as we stay within the radius of convergence.
+This means that if we know a given power series represents a particular function, we can manipulate it to find a power series representation for a new function!\\
+
+
+
+\hrule
+\vspace*{.2in}
+
+%\begin{minipage}{.7\textwidth}
+\subsection*{Power Series Differentiation \& Integration Theorem:}
+If the power series, \(\Sumzero c_n (x-a)^n\) has a radius of convergence \(R>0\), then the function
+\[
+f(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + \ldots = \Sumzero c_n (x-a)^n
+\]
+is differentiable (and therefore continuous!) on the interval \(I=(a-R, a+R)\) and
+ \begin{enumerate}[(i)] 
+ \item \(
+f'(x) = c_1 + 2c_2(x-a) + 3c_3(x-a)^2 + \ldots = \Sum n c_n (x-a)^{n-1}
+\)
+ \item \(
+\int f(x)\ dx = C + c_0(x-a) + c_1\frac{(x-a)^2}{2} + c_2\frac{(x-a)^3}{3} + \ldots = C+\Sumzero c_n \frac{(x-a)^{n+1}}{n+1}
+\)
+ \end{enumerate}
+The radius of convergence for the series in (i) and (ii) is also \(R\).\\
+%\end{minipage}
+
+
+\hrule
+\vspace*{.2in}
+
+Our first building block will be the Geometric Series, because we know how to find the sum of that series. A surprising number of new series can be found using that building block, but the Geometric Series can only get us so far. We will need a more systematic method for finding new series, which we will learn in the next section.
+
+%\begin{minipage}{.7\textwidth}
+%\callout{
+\[
+\text{Geometric Series:}\qquad  \frac{1}{1-x}  = \sum_{n=0}^\infty x^{n}= 1+x+x^2+x^3+x^4+\ldots , \quad R=1
+\]
+
+%}
+%\end{minipage}
+\hspace*{.25in}
+%\begin{minipage}{.25\textwidth}
+\subsection*{Other Moves:}
+\begin{itemize}
+\item Add or Subtract Series
+\item Multiply Series by a Scalar
+\item Plug something in for \(x\)
+\begin{itemize}
+\item may change the radius of convergence
+\end{itemize}
+\end{itemize}
+
+%\end{minipage}
+
+%\end{framed}
+
+%\end{minipage}
+
+%\vfill
+
+\section*{Warm Up / Brainstorming:}
+%In the following examples, we will find power series representations for the functions listed below. 
+To build intuition for the following examples, spend a few minutes brainstorming what you know about each function. %\\
+\textit{Potential Topics: Domain? Range? Graph? Other useful facts?}
+
+%\begin{multicols}{2}
+
+\( \ln(x+1) \)
+
+\( \arctan(x) \)
+
+%\end{multicols}
+
+\pagebreak
+
+%\callout{
+\[
+\text{Geometric Series:}\qquad  \frac{1}{1-x}  = \sum_{n=0}^\infty x^{n}= 1+x+x^2+x^3+x^4+\ldots , \quad R=1
+\]
+
+%}
+
+\section*{Examples:}
+
+
+
+\begin{enumerate}[{Example } 1:]
+\addtocounter{enumi}{3}
+
+\item Discover a power series representation for \(\ln|1+x|\) using the geometric series as a building block.
+\vfill
+
+
+\item Discover a power series representation for \(\arctan(x)\) using the geometric series as a building block.
+\vfill
+
+%\callout{
+%\[
+%\mathrm{Geometric\ Series:}\qquad  \frac{1}{1-x}  = \sum_{n=0}^\infty x^{n}= 1+x+x^2+x^3+x^4+\ldots , \quad R=1
+%\]
+%
+%}
+\end{enumerate}
+
+%\pagebreak
+%
+%\section*{Section 8.5, Part 2: Power Series Practice:}
+%
+%\begin{enumerate}[{Problem }1:]
+%\item Find the radius and interval of convergence for the following power series:
+%
+%%\begin{multicols}{2}
+%\begin{enumerate}
+%
+%\item \(\qquad \Sumzero \frac{(-5)^n (x-10)^n}{n!}\)
+%
+%\vfill%\vspace*{.5in}
+%
+%\item \(\qquad \Sumzero e^n(x-2)^n\)
+%
+%\vfill%\vspace*{.5in}
+%
+%\item \(\qquad \Sum \frac{(-2)^n x^n}{n^2}\)
+%
+%\vfill%\vspace*{.5in}
+%
+%\item \(\qquad \Sumzero x^n\)
+%
+%\vfill%\vspace*{.5in}
+%
+%\end{enumerate}
+%%\end{multicols}
+%%\vfill
+%
+%\end{enumerate}
+
+%\vspace*{-.5in}
+\end{document}

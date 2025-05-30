@@ -1,0 +1,515 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="25SQ-Math-1336-Ch6s2-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 57--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 57--><p class="noindent" >
+</p><!--l. 57--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 57--><p class="noindent" >
+</p><!--l. 57--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 1336: Calculus III</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Section 6.2: Fun with Power Series!</span> </p></div>                                                     </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Section 6.2: Representing Functions with Power Series, AKA: Fun with Power Series!</h3>
+<!--l. 72--><p class="noindent" >The theorem below tells us that we can treat Power Series just like more familiar functions, as long as we stay within the
+radius of convergence. This means that if we know a given power series represents a particular function, we can
+manipulate it to ﬁnd a power series representation for a new function!<br 
+class="newline" />_________________________________________________________________________________________
+<a 
+ id="Q1-1-3"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Power Series Diﬀerentiation &#x0026; Integration Theorem:</h4>
+<!--l. 82--><p class="noindent" >If the power series, <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msubsup><mrow 
+><mo 
+class="MathClass-op">∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math> has
+a radius of convergence <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi> <mo 
+class="MathClass-rel">&#x003E;</mo> <mn>0</mn></mrow></math>,
+then the function
+</p>
+<div class="math-display"><!--l. 83--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                              <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">…</mo> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+>
+</mrow></math></div>
+<!--l. 85--><p class="nopar" > is diﬀerentiable (and therefore continuous!) on the interval
+<!--l. 86--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>I</mi> <mo 
+class="MathClass-rel">=</mo> <mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>R</mi><mo 
+class="MathClass-punc">,</mo><mi 
+>a</mi> <mo 
+class="MathClass-bin">+</mo> <mi 
+>R</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+and
+       </p><dl class="enumerate"><dt class="enumerate">
+  (i) </dt><dd 
+class="enumerate"><!--l. 88--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mi 
+>′</mi></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mn>1</mn></mrow></msub 
+> <mo 
+class="MathClass-bin">+</mo> <mn>2</mn><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mn>3</mn><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">…</mo> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><mi 
+>n</mi><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+></mrow></math>
+        </dd><dt class="enumerate">
+  (ii) </dt><dd 
+class="enumerate"><!--l. 91--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>C</mi> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>0</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>1</mn></mrow></msub 
+><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+      <mrow 
+><mn>2</mn></mrow></mfrac>      <mo 
+class="MathClass-bin">+</mo> <msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>3</mn></mrow></msup 
+></mrow> 
+      <mrow 
+><mn>3</mn></mrow></mfrac>      <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">…</mo> <mo 
+class="MathClass-rel">=</mo> <mi 
+>C</mi> <mo 
+class="MathClass-bin">+</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msup 
+></mrow> 
+    <mrow 
+><mi 
+>n</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow></mfrac>    </mrow></math></dd></dl>
+<!--l. 95--><p class="noindent" >The radius of convergence for the series in (i) and (ii) is also
+<!--l. 95--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi></mrow></math>.<br 
+class="newline" />_____________________________________________________________________________________________________________________________________________
+</p><!--l. 102--><p class="noindent" >Our ﬁrst building block will be the Geometric Series, because we know how to ﬁnd the sum of that series. A
+                                                                                         
+                                                                                         
+surprising number of new series can be found using that building block, but the Geometric Series can only get
+us so far. We will need a more systematic method for ﬁnding new series, which we will learn in the next
+section.
+</p>
+<div class="par-math-display"><!--l. 106--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+               <mstyle 
+class="text"><mtext  >Geometric Series:</mtext></mstyle><mspace width="2em" class="qquad"/>  <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>4</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo>…</mo><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>R</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn>
+</mrow></math></div>
+<!--l. 108--><p class="nopar" >
+</p><!--l. 112--><p class="noindent" >       <a 
+ id="Q1-1-5"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a>Other Moves:</h4>
+     <ul class="itemize1">
+     <li class="itemize">Add or Subtract Series
+     </li>
+     <li class="itemize">Multiply Series by a Scalar
+     </li>
+     <li class="itemize">Plug something in for <!--l. 118--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+         <ul class="itemize2">
+         <li class="itemize">may change the radius of convergence</li></ul>
+     </li></ul>
+<a 
+ id="Q1-1-7"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-4000"></a>Warm Up / Brainstorming:</h3>
+<!--l. 134--><p class="noindent" >To build intuition for the following examples, spend a few minutes brainstorming what you know about each function.
+<span 
+class="cmssi-10">Potential Topics: Domain? Range? Graph? Other useful facts?</span>
+</p><!--l. 139--><p class="noindent" ><!--l. 139--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo class="qopname">ln</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+</p><!--l. 141--><p class="noindent" ><!--l. 141--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo class="qopname">arctan</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+                                                                                         
+                                                                                         
+</p>
+<div class="par-math-display"><!--l. 148--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+               <mstyle 
+class="text"><mtext  >Geometric Series:</mtext></mstyle><mspace width="2em" class="qquad"/>  <mfrac><mrow 
+><mn>1</mn></mrow>
+<mrow 
+><mn>1</mn> <mo 
+class="MathClass-bin">−</mo> <mi 
+>x</mi></mrow></mfrac> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>4</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo>…</mo><mo 
+class="MathClass-punc">,</mo><mspace width="1em" class="quad"/><mi 
+>R</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn>
+</mrow></math></div>
+<!--l. 150--><p class="nopar" >
+<a 
+ id="Q1-1-9"></a>
+</p>
+<h3 class="likesectionHead"><a 
+ id="x1-5000"></a>Examples:</h3>
+          <dl class="enumerate"><dt class="enumerate">
+Example  4: </dt><dd 
+class="enumerate">Discover a power series representation for <!--l. 161--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo class="qopname">ln</mo><!--nolimits--><mo 
+class="MathClass-rel">|</mo><mn>1</mn> <mo 
+class="MathClass-bin">+</mo> <mi 
+>x</mi><mo 
+class="MathClass-rel">|</mo></mrow></math>
+          using the geometric series as a building block.
+          </dd><dt class="enumerate">
+Example  5: </dt><dd 
+class="enumerate">Discover a power series representation for <!--l. 165--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo class="qopname">arctan</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+          using the geometric series as a building block.
+          </dd></dl>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+
