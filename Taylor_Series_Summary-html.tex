@@ -1,0 +1,138 @@
+%\documentclass[11pt]{amsart}
+%
+%\documentclass[11pt, letterpaper]{article}
+%
+%\usepackage{amsmath, ulem, graphicx, amsthm, marvosym, multicol}
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%
+%\renewcommand{\familydefault}{\sfdefault}
+%
+%%\usepackage{graphics}
+%
+%%\topmargin -.5in
+%%\evensidemargin-.1in
+%%\oddsidemargin-.1in
+%%\textheight 9in
+%%\textwidth 6.5in
+%
+%\newtheorem*{definition}{Definition}
+%%\setlength{\voffset}{-1in}
+%
+%\everymath={\displaystyle}
+%
+%%%% 
+%% Framed mini-page environment 
+%%%%
+%\newsavebox{\fmbox}
+%   \newenvironment{ans}
+%     {\begin{lrbox}{\fmbox}\begin{minipage}{13cm} \textbf{Answer:} \par}
+%     {\end{minipage}\end{lrbox}\fbox{\usebox{\fmbox}} \vspace{0.25cm}}
+%
+%\newcommand{\lcm}{\operatorname{lcm}}
+%\newcommand{\ds}{\displaystyle}
+%
+%\newcommand{\lilspa}{\vspace{.15in}}
+%
+%\begin{document}
+
+\pagestyle{empty}
+
+
+%\begin{center}
+%{\sc  {\large Taylor Series Summary Sheet}\\
+%Math 1336 \& 1337  (Dr. Christine Cole)
+%%\\May 16, 2014
+%}
+%\end{center}
+%
+%\vspace*{.1in}
+
+{\sc Definition for Taylor Series for \(f(x)\) centered at \(a\):}
+\vspace*{-.1in}
+\[
+\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n  =  f(a) + f^{(1)}(a)(x-a) + \frac{f^{(2)}(a)}{2!}(x-a)^2
+\]
+\[
+   +\ \frac{f^{(3)}(a)}{3!}(x-a)^3+\frac{f^{(4)}(a)}{4!}(x-a)^4+\ldots\\
+\]
+
+%\vspace*{.1in}
+
+{\sc Definition for Maclaurin Series for \(f(x)\):}
+\vspace*{-.1in}
+\[
+\sum_{n=0}^\infty \frac{f^{(n)}(0)}{n!}x^n  =  f(0) + f^{(1)}(0)x 
++ \frac{f^{(2)}(0)}{2!}x^2 + \frac{f^{(3)}(0)}{3!}x^3+\frac{f^{(4)}(0)}{4!}x^4+\ldots
+\]
+
+\vspace*{-.2in}
+%\begin{framed}
+{\sc Taylor's Formula / Lagrange's Form of the Remainder:}
+
+\vspace*{-.1in}
+\[
+R_n(x) = \frac{f^{(n+1)}(z)}{(n+1)!}(x-a)^{n+1}, \qquad \qquad %\textbf{Will NOT be covered in Spring 2023}
+\]
+\vspace*{-.2in}
+%\end{framed}
+
+
+%\vspace*{.1in}
+
+{\sc Alternating Series Estimation Theorem Formula:}
+\vspace*{-.1in}
+\[
+|R_n| = \left| S - S_n \right | \leq b_{n+1}
+\]
+
+
+
+\vspace*{.1in}
+
+%
+%{\sc Taylor's Formula / Lagrange's Form of the Remainder:}
+%
+%\vspace*{-.1in}
+%\begin{eqnarray*}
+%R_n(x) = \frac{f^{(n+1)}(z)}{(n+1)!}(x-a)^{n+1}
+%\end{eqnarray*}
+%
+%
+%
+%%\vspace*{.1in}
+%
+%{\sc Alternating Series Estimation Theorem Formula:}
+%\vspace*{-.1in}
+%\begin{eqnarray*}
+%|R_n| = \left| S - S_n \right | \leq b_{n+1}
+%\end{eqnarray*}
+%
+%
+%
+%\vspace*{.1in}
+
+
+{\sc Selected Maclaurin Series with Radius of Convergence, \(R\):}
+
+\[
+e^x = \sum_{n=0}^\infty \frac{x^n}{n!}  =  1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\ldots, \quad R=\infty
+\]
+
+\[
+\sin(x) = \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!}  =  x-\frac{x^3}{3!}+\frac{x^5}{5!}-\frac{x^7}{7!}+\frac{x^9}{9!}-\ldots, \quad R=\infty
+\]
+
+\[
+\cos(x) = \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!}  =  1-\frac{x^2}{2!}+\frac{x^4}{4!}-\frac{x^6}{6!}+\frac{x^8}{8!}-\ldots, \quad R=\infty
+\]
+
+\[
+\text{Geometric Series: } \frac{1}{1-x} = \sum_{n=0}^\infty x^{n}  =  1+x+x^2+x^3+x^4+\ldots, \quad R=1
+\]
+\[
+\ln(1+x) = \sum_{n=1}^\infty \frac{(-1)^{n-1} x^n}{n}  =  x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}-\ldots, \quad R=1
+\]
+%  \\
+%\mathrm{Binomial\ Series:\ } (1+x)^k = \sum_{n=0}^\infty\begin{pmatrix} k\\n \end{pmatrix} x^{n}  =  1+kx+\frac{k(k-1)}{2!}x^2+\frac{k(k-1)(k-2)}{3!}x^3+\ldots, \quad R=1\\
+
+%\end{document}

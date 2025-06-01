@@ -1,0 +1,830 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="25SQ-Math-1336-Ch6s3-Part1-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 57--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 57--><p class="noindent" >
+</p><!--l. 57--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 57--><p class="noindent" >
+</p><!--l. 57--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 1336: Calculus III</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Section 6.3, Part 1: Intro to Taylor &#x0026; Maclaurin Series</span></p></div>                         </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Taylor &#x0026; Maclaurin Series Key Idea:</h3>
+<hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-1001r1"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 73--><p class="noindent" ><img 
+src="Ch8s7-Taylor2.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 1: </span><span  
+class="content">A graph showing a function and its zeroth, ﬁrst, and second degree Taylor Polynomials, centered at
+x=a.</span></div><!--tex4ht:label?: x1-1001r1 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<!--l. 79--><p class="noindent" >To build a polynomial of degree <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>
+that approximates the function <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+well near <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>, make sure
+that it matches the ﬁrst <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>
+derivatives of <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math>
+<span 
+class="cmssi-10">exactly </span>at <!--l. 79--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>.<br 
+class="newline" /> <br 
+class="newline" />The more derivatives we match, the better our approximation should be!<br 
+class="newline" /> <br 
+class="newline" />
+<a 
+ id="Q1-1-4"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Taylor Polynomials -vs- Taylor Series:</h4>
+<!--l. 99--><p class="noindent" >A Taylor Polynomial of degree <!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>
+(or order <!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>)
+<!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math> terminates
+after the <!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>
+term:
+</p>
+<div class="math-display"><!--l. 100--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+               <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>2</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">…</mo> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+><mo 
+class="MathClass-punc">,</mo>
+</mrow></math></div>
+<!--l. 102--><p class="nopar" > while a Taylor Series is a power series centered at <!--l. 103--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>
+that typically has inﬁnitely many terms. A Taylor Series that is centered at
+<!--l. 103--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></mrow></math> is given
+a special name: Maclaurin Series.<br 
+class="newline" /> <br 
+class="newline" />
+<a 
+ id="Q1-1-6"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a> Taylor Series for f(x) centered at a:</h4>
+<!--l. 110--><p class="noindent" >
+                                                                                         
+                                                                                         
+<!--tex4ht:inline--></p><!--l. 110--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mtable 
+class="eqnarray-star" columnalign="right center left" >
+<mtr><mtd 
+class="eqnarray-1"> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow>
+   <mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mtd><mtd 
+class="eqnarray-2">   <mo 
+class="MathClass-rel">=</mo></mtd><mtd 
+class="eqnarray-3">   <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>2</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">                            </mtd><mtd 
+class="eqnarray-2">    </mtd><mtd 
+class="eqnarray-3">   <mo 
+class="MathClass-bin">+</mo><mspace width="1em" class="nbsp" /><mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow>
+   <mrow 
+><mn>3</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>4</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>4</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>4</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">…</mo></mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">                            </mtd><mtd 
+class="eqnarray-2">    </mtd><mtd 
+class="eqnarray-3">                                    </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>                     </mtr></mtable>
+</math>
+<!--l. 113--><p class="nopar" >
+<a 
+ id="Q1-1-8"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-4000"></a>Maclaurin Series for f(x):</h4>
+<!--l. 120--><p class="noindent" >
+<!--tex4ht:inline--></p><!--l. 120--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" >
+<mtable 
+class="eqnarray-star" columnalign="right center left" >
+<mtr><mtd 
+class="eqnarray-1"> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><munderover accentunder="false" accent="false"><mrow  
+><mo mathsize="big" 
+> ∑</mo>
+  </mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>0</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></munderover 
+><mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow>
+   <mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mtd><mtd 
+class="eqnarray-2">   <mo 
+class="MathClass-rel">=</mo></mtd><mtd 
+class="eqnarray-3">   <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>2</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>3</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>3</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>3</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>4</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>4</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>4</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">…</mo></mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>
+</mtr><mtr><mtd 
+class="eqnarray-1">                       </mtd><mtd 
+class="eqnarray-2">    </mtd><mtd 
+class="eqnarray-3">                                                  </mtd><mtd 
+class="eqnarray-4"> <mtext class="eqnarray"></mtext></mtd>            </mtr></mtable>
+</math>
+<!--l. 123--><p class="nopar" >
+<a 
+ id="Q1-1-10"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-5000"></a> Notation &#x0026; Other Details:</h4>
+     <ul class="itemize1">
+     <li class="itemize"><span 
+class="cmssbx-10">Note: </span>We are “allowed” to represent <!--l. 131--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math>
+     as the series above when <!--l. 131--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+                                                                                         
+                                                                                         
+     is within the radius of convergence, <!--l. 131--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>R</mi></mrow></math>,
+     i.e.: <!--l. 131--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">&#x003C;</mo> <mi 
+>R</mi></mrow></math>.
+     </li>
+     <li class="itemize"><!--l. 132--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+     is the n<!--l. 132--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><msup><mrow 
+><mrow 
+></mrow><mrow 
+><mi 
+>t</mi><mi 
+>h</mi></mrow></msup 
+></mrow></math>
+     derivative of <!--l. 132--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math>
+     with respect to <!--l. 132--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+     </li>
+     <li class="itemize"><!--l. 133--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+     </li>
+     <li class="itemize"><!--l. 134--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mn>0</mn><mo 
+class="MathClass-punc">!</mo> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math></li></ul>
+<a 
+ id="Q1-1-12"></a>
+<h4 class="likesubsectionHead"><a 
+ id="x1-6000"></a>Strategy for Finding Taylor/Maclaurin Series:</h4>
+   <dl class="enumerate"><dt class="enumerate">
+(1) </dt><dd 
+class="enumerate">Evaluate the ﬁrst 4 or 5 derivatives of <!--l. 152--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+   at <!--l. 152--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>.
+   </dd><dt class="enumerate">
+(2) </dt><dd 
+class="enumerate">Look for a pattern that describes the coeﬃcient of the <!--l. 153--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>
+   term: <!--l. 154--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>c</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    </mrow></math>.
+   </dd><dt class="enumerate">
+(3) </dt><dd 
+class="enumerate">If the “pattern” includes alternating signs, use either <!--l. 155--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>
+   or <!--l. 155--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msup 
+></mrow></math>,
+   depending on whether the ﬁrst term is positive or negative.</dd></dl>
+<a 
+ id="Q1-1-14"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-7000"></a>Examples we will work through together:</h3>
+          <dl class="enumerate"><dt class="enumerate">
+Example 1: </dt><dd 
+class="enumerate">Find the Maclaurin Series for <!--l. 173--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msup 
+></mrow></math>.
+          </dd><dt class="enumerate">
+Example 2: </dt><dd 
+class="enumerate">Find the radius of convergence of the Maclaurin Series for <!--l. 174--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msup 
+></mrow></math>.
+          </dd><dt class="enumerate">
+Example 3: </dt><dd 
+class="enumerate">Find the Taylor Series for <!--l. 175--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mi 
+>x</mi></mrow></msup 
+></mrow></math>
+          centered at <!--l. 175--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn><mn>0</mn></mrow></math>.
+          </dd></dl>
+<a 
+ id="Q1-1-16"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-8000"></a>Problems for Group Work</h3>
+          <dl class="enumerate"><dt class="enumerate">
+Problem 1: </dt><dd 
+class="enumerate">Find the Maclaurin Series for <!--l. 185--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> sin</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>.
+<a 
+ id="x1-80011"></a>
+          </dd><dt class="enumerate">
+Problem 2: </dt><dd 
+class="enumerate">Use your answer to Problem <a 
+href="#x1-80011">1<!--tex4ht:ref: sin --></a> to discover the Maclaurin Series for <!--l. 186--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo class="qopname">cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>.
+                                                                                         
+                                                                                         
+          </dd><dt class="enumerate">
+Problem 3: </dt><dd 
+class="enumerate">Find the third order Taylor Polynomial, <!--l. 187--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+          for <!--l. 187--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> ln</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+          centered at <!--l. 187--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>a</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>.
+          </dd></dl>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+
