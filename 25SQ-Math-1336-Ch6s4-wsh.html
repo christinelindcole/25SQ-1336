@@ -1,0 +1,1080 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title></title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="25SQ-Math-1336-Ch6s4-wsh.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+<!--l. 57--><p class="noindent" ><span 
+class="colorbox" id="colorbox1"></p>
+ <div class="center" 
+>
+ <!--l. 57--><p class="noindent" >
+</p><!--l. 57--><p class="noindent" ></p>
+<div class="center" 
+>
+<!--l. 57--><p class="noindent" ></p><!--l. 57--><p class="noindent" ><span 
+class="rm-lmvtt-10x-x-248">MATH 1336: Calculus III</span><br />
+<span 
+class="rm-lmvtt-10x-x-172">Section 6.4: Applications of Taylor Polynomials - Error Estimation</span></p></div>       </div>                        </span>
+<a 
+ id="Q1-1-1"></a>
+<h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Taylor/Maclaurin Polynomial Approximation Key Ideas:</h3>
+<hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-1001r1"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 75--><p class="noindent" ><img 
+src="Ch8s7-Taylor2.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 1: </span><span  
+class="content">A graph showing a function and its zeroth, ﬁrst, and second degree Taylor Polynomials, centered at
+x=a.</span></div><!--tex4ht:label?: x1-1001r1 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<!--l. 82--><p class="noindent" >To build a polynomial of degree <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>
+that approximates the function <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+well near <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>, make sure
+that it matches the ﬁrst <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>
+derivatives of <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math>
+<span 
+class="cmssi-10">exactly </span>at <!--l. 82--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>.<br 
+class="newline" /> <br 
+class="newline" />The more derivatives we match, the better our approximation should be!<br 
+class="newline" />
+</p><!--l. 86--><p class="noindent" >When <!--l. 86--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math> is
+close to <!--l. 86--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>a</mi></mrow></math> and
+<!--l. 86--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math> is large: the
+<!--l. 86--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>n</mi></mrow><mrow 
+><mi 
+>t</mi><mi 
+>h</mi></mrow></msup 
+></mrow></math> degree Taylor/Maclaurin
+polynomial should approximate <!--l. 86--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+very well!<br 
+class="newline" />
+<a 
+ id="Q1-1-4"></a>
+</p>
+<h4 class="likesubsectionHead"><a 
+ id="x1-2000"></a>Taylor Polynomials -vs- Taylor Series:</h4>
+<!--l. 95--><p class="noindent" >A Taylor Polynomial of degree <!--l. 95--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>
+(or order <!--l. 95--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>)
+<!--l. 95--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math> terminates
+after the <!--l. 95--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+></mrow></math>
+term:
+</p>
+<div class="math-display"><!--l. 96--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+               <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>2</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>2</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mn>2</mn></mrow></msup 
+> <mo 
+class="MathClass-bin">+</mo> <mo 
+class="MathClass-op">…</mo> <mo 
+class="MathClass-bin">+</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi></mrow></msup 
+><mo 
+class="MathClass-punc">,</mo>
+</mrow></math></div>
+<!--l. 98--><p class="nopar" > while a Taylor Series is a power series centered at <!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mi 
+>a</mi></mrow></math>
+that typically has inﬁnitely many terms. A Taylor Series that is centered at
+<!--l. 99--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></mrow></math> is given
+a special name: Maclaurin Series.<br 
+class="newline" /> <br 
+class="newline" />
+<a 
+ id="Q1-1-6"></a>
+</p>
+                                                                                         
+                                                                                         
+<h4 class="likesubsectionHead"><a 
+ id="x1-3000"></a>Error Estimation:</h4>
+<!--l. 105--><p class="noindent" >The methods shown below can be used to ﬁnd an upper bound on the error due to approximating a function with only the
+ﬁrst <!--l. 105--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>n</mi></mrow></math>
+terms of the Taylor Series. The key idea behind both methods is that the size of the error should be bounded by the <span 
+class="cmssi-10">ﬁrst</span>
+<span 
+class="cmssi-10">term left oﬀ.</span>
+</p><!--l. 107--><p class="noindent" >     
+<a 
+ id="Q1-1-8"></a>
+</p>
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-4000"></a>Taylor&#x2019;s Forumla/Lagrange&#x2019;s Form of the Remainder:</h5>
+<!--l. 114--><p class="noindent" >The remainder can be expressed as shown below, where
+<!--l. 114--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi></mrow></math> is a number
+strictly between <!--l. 114--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+and <!--l. 114--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>a</mi></mrow></math>
+</p>
+<div class="math-display"><!--l. 115--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                <msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+ <mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">!</mo></mrow></mfrac> <msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msup 
+>
+</mrow></math></div>
+<!--l. 117--><p class="nopar" >
+</p><!--l. 119--><p class="noindent" >Taylor&#x2019;s Formula is applied on an <span 
+class="cmssi-10">interval</span>, as shown below.
+</p><!--l. 121--><p class="noindent" >The goal is to ﬁnd an upper bound (worst-case-scenario) for
+<!--l. 121--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo></mrow></math> on the
+interval <!--l. 121--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>I</mi></mrow></math>.
+<a 
+ id="Q1-1-10"></a>
+</p>
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-5000"></a>Alternating Series Estimation Theorem (5.4):</h5>
+<!--l. 126--><p class="noindent" >Note that this can only be used if the Taylor/Maclaurin Series has alternating signs!<br 
+class="newline" />If <!--l. 127--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>S</mi> <mo 
+class="MathClass-rel">=</mo><msubsup><mrow 
+><mo 
+class="MathClass-op"> ∑</mo>
+  <!--nolimits--></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-rel">=</mo><mn>1</mn></mrow><mrow 
+><mi 
+>∞</mi></mrow></msubsup 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">−</mo><mn>1</mn></mrow></msup 
+><msub><mrow 
+><mi 
+>b</mi></mrow><mrow 
+>
+<mi 
+>n</mi></mrow></msub 
+></mrow></math> is the
+sum of a convergent alternating series, then
+</p>
+                                                                                         
+                                                                                         
+<div class="math-display"><!--l. 128--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                   <mo 
+class="MathClass-rel">|</mo><msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo> <mo 
+class="MathClass-rel">=</mo> <mo 
+class="MathClass-rel">|</mo><mi 
+>S</mi> <mo 
+class="MathClass-bin">−</mo> <msub><mrow 
+><mi 
+>S</mi></mrow><mrow 
+><mi 
+>n</mi></mrow></msub 
+><mo 
+class="MathClass-rel">|</mo><mo 
+class="MathClass-rel">≤</mo> <msub><mrow 
+><mi 
+>b</mi></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msub 
+>
+</mrow></math></div>
+<!--l. 130--><p class="nopar" >
+</p>
+<hr class="figure" /><div class="figure" 
+>
+                                                                                         
+                                                                                         
+<a 
+ id="x1-5001r2"></a>
+                                                                                         
+                                                                                         
+
+<!--l. 140--><p class="noindent" ><img 
+src="Ch6s4-Error-Interval.png" alt="PIC"  
+ />
+<br /> </p><div class="caption" 
+><span class="id">Figure 2: </span><span  
+class="content">Figure illustrating the interval on which Taylor&#x2019;s Formula is applied.</span></div><!--tex4ht:label?: x1-5001r2 -->
+                                                                                         
+                                                                                         
+</div><hr class="endfigure" />
+<a 
+ id="Q1-1-13"></a>
+<h5 class="likesubsubsectionHead"><a 
+ id="x1-6000"></a>Steps for using Taylor&#x2019;s Formula:</h5>
+     <dl class="enumerate"><dt class="enumerate">
+  1. </dt><dd 
+class="enumerate">Find the <!--l. 149--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>s</mi><mi 
+>t</mi></mrow></msup 
+></mrow></math>
+     derivative of <!--l. 149--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi></mrow></math>:
+     <!--l. 149--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+     </dd><dt class="enumerate">
+  2. </dt><dd 
+class="enumerate">Find an upper bound on <!--l. 150--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-rel">|</mo><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-rel">|</mo></mrow></math>
+     for <!--l. 150--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>z</mi></mrow></math>
+     in <!--l. 150--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>I</mi></mrow></math>
+     </dd><dt class="enumerate">
+  3. </dt><dd 
+class="enumerate">Find an upper bound on <!--l. 151--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mfenced separators="" 
+open="|"  close="|" ><mrow><mfrac><mrow 
+><msup><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi> <mo 
+class="MathClass-bin">−</mo> <mi 
+>a</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow><mrow 
+><mi 
+>n</mi><mo 
+class="MathClass-bin">+</mo><mn>1</mn></mrow></msup 
+></mrow>
+  <mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>n</mi> <mo 
+class="MathClass-bin">+</mo> <mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>  </mrow></mfenced></mrow></math>
+     for <!--l. 151--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi></mrow></math>
+     in <!--l. 151--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>I</mi></mrow></math>
+     </dd><dt class="enumerate">
+  4. </dt><dd 
+class="enumerate">Multiply the values from steps 2 &#x0026; 3</dd></dl>
+                                                                                         
+                                                                                         
+     <dl class="list1"><dt class="list">
+<span 
+class="cmssbx-10">Example 2:</span>  </dt><dd 
+class="list">
+     <!--l. 171--><p class="noindent" >The function <!--l. 171--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+      </mrow></msup 
+></mrow></math>
+     and its second, fourth, and sixth degree Maclaurin Polynomials, <!--l. 171--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>4</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mo 
+class="MathClass-punc">,</mo><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>6</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+     are shown on the graph below.
+</p>
+     <div class="center" 
+>
+<!--l. 175--><p class="noindent" >
+</p><!--l. 176--><p class="noindent" ><img 
+src="25SQ-Math-1336-Ch6s4-wsh-figure0.png" alt="PIC"  
+ />
+</p></div>
+         <dl class="enumerate"><dt class="enumerate">
+      a) </dt><dd 
+class="enumerate">Should you expect <!--l. 213--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         to be a good estimate of <!--l. 213--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>?
+         Why or why not?
+         </dd><dt class="enumerate">
+      b) </dt><dd 
+class="enumerate">Should you expect <!--l. 217--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         to be a good estimate of <!--l. 217--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>?
+         Why or why not?
+         </dd><dt class="enumerate">
+      c) </dt><dd 
+class="enumerate">Use the graph shown above to estimate the accuracy of the approximations:<br 
+class="newline" /><!--l. 222--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+         <!--l. 222--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>4</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+         <!--l. 222--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>6</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         </dd><dt class="enumerate">
+      d) </dt><dd 
+class="enumerate">Use the Alternating Series Estimation/Remainder Theorem or Taylor&#x2019;s Formula to estimate the accuracy
+         of the approximations:<br 
+class="newline" /><!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+         <!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>4</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+         <!--l. 227--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>6</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>1</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         </dd><dt class="enumerate">
+      e) </dt><dd 
+class="enumerate">Finally, we can achieve our goal from the beginning of Chapter 5! Use <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>6</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         to approximate the area under <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         between <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>0</mn></mrow></math>
+                                                                                         
+                                                                                         
+         and <!--l. 231--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>x</mi> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn></mrow></math>.
+         Also, explain how to give an estimate of the accuracy of the approximation.
+<div class="math-display"><!--l. 232--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                 <msubsup><mrow 
+><mo 
+class="MathClass-op">∫
+ <!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mn>1</mn></mrow></msubsup 
+><msup><mrow 
+><mi 
+>e</mi></mrow><mrow 
+><mo 
+class="MathClass-bin">−</mo><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+>
+      </mrow></msup 
+><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi> <mo 
+class="MathClass-rel">≈</mo><msubsup><mrow 
+><mo 
+class="MathClass-op">∫ 
+<!--nolimits--></mo><!--nolimits--></mrow><mrow 
+><mn>0</mn></mrow><mrow 
+><mn>1</mn></mrow></msubsup 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+>
+<mn>6</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow><mspace width="1em" class="nbsp" /><mi 
+>d</mi><mi 
+>x</mi>
+</mrow></math></div>
+         <!--l. 234--><p class="nopar" >
+</p>
+         </dd></dl>
+                                                                                         
+                                                                                         
+     </dd><dt class="list">
+<span 
+class="cmssbx-10">Example 3:</span>  </dt><dd 
+class="list">
+     <!--l. 245--><p class="noindent" >The function <!--l. 245--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+     is plotted as a solid curve below.<br 
+class="newline" />Its second degree Maclaurin Polynomial, <!--l. 246--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mn>1</mn> <mo 
+class="MathClass-bin">−</mo><mfrac><mrow 
+><msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>2</mn></mrow></msup 
+></mrow> 
+ <mrow 
+><mn>2</mn></mrow></mfrac> </mrow></math>,
+     is plotted with dashed curve below.
+</p>
+     <div class="center" 
+>
+<!--l. 250--><p class="noindent" >
+</p><!--l. 251--><p class="noindent" ><img 
+src="25SQ-Math-1336-Ch6s4-wsh-figure1.png" alt="PIC"  
+ />
+</p></div>
+         <dl class="enumerate"><dt class="enumerate">
+      a) </dt><dd 
+class="enumerate">Should you expect <!--l. 285--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         to be a good estimate of <!--l. 285--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>0</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>?
+         Why or why not?
+         </dd><dt class="enumerate">
+      b) </dt><dd 
+class="enumerate">Should you expect <!--l. 289--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfrac><mrow><mi 
+>π</mi></mrow>
+<mrow><mn>2</mn></mrow></mfrac> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         to be a good estimate of <!--l. 289--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfrac><mrow><mi 
+>π</mi></mrow>
+<mrow><mn>2</mn></mrow></mfrac> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>?
+         Why or why not?
+         </dd><dt class="enumerate">
+      c) </dt><dd 
+class="enumerate">Use the graph shown above to estimate the accuracy of the approximation <!--l. 293--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfrac><mrow><mi 
+>π</mi></mrow>
+<mrow><mn>2</mn></mrow></mfrac> </mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfrac><mrow><mi 
+>π</mi></mrow>
+<mrow><mn>2</mn></mrow></mfrac> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         </dd><dt class="enumerate">
+      d) </dt><dd 
+class="enumerate">Use the Alternating Series Estimation Theorem to estimate the accuracy of the approximation <!--l. 297--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfrac><mrow><mi 
+>π</mi></mrow>
+<mrow><mn>2</mn></mrow></mfrac> </mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mfrac><mrow><mi 
+>π</mi></mrow>
+<mrow><mn>2</mn></mrow></mfrac> </mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         </dd><dt class="enumerate">
+      e) </dt><dd 
+class="enumerate">Use Taylor&#x2019;s Formula (also known as Lagrange&#x2019;s form of the remainder term) to estimate the accuracy
+         of the approximation <!--l. 302--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">≈</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>
+         on the interval <!--l. 302--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mo 
+class="MathClass-bin">−</mo><mfrac><mrow><mi 
+>π</mi></mrow>
+<mrow><mn>2</mn></mrow></mfrac>  <mo 
+class="MathClass-rel">≤</mo> <mi 
+>x</mi> <mo 
+class="MathClass-rel">≤</mo><mfrac><mrow> <mi 
+>π</mi></mrow> 
+<mrow><mn>2</mn></mrow></mfrac> </mrow></math>.<br 
+class="newline" /><span 
+class="cmssi-10">Hint: </span>Note that for <!--l. 303--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><mi 
+>f</mi><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo><mo class="qopname"> cos</mo><!--nolimits--><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+         <!--l. 303--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="inline" ><mrow 
+><msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>2</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <msub><mrow 
+><mi 
+>T</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></math>,
+         so consider:
+                                                                                         
+                                                                                         
+<div class="math-display"><!--l. 304--><math 
+ xmlns="http://www.w3.org/1998/Math/MathML"  
+display="block" ><mrow 
+>
+                                     <msub><mrow 
+><mi 
+>R</mi></mrow><mrow 
+><mn>3</mn></mrow></msub 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>x</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow> <mo 
+class="MathClass-rel">=</mo> <mfrac><mrow 
+><msup><mrow 
+><mi 
+>f</mi></mrow><mrow 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mn>4</mn></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow></msup 
+><mrow ><mo 
+class="MathClass-open">(</mo><mrow><mi 
+>z</mi></mrow><mo 
+class="MathClass-close">)</mo></mrow></mrow> 
+   <mrow 
+><mn>4</mn><mo 
+class="MathClass-punc">!</mo></mrow></mfrac>    <msup><mrow 
+><mi 
+>x</mi></mrow><mrow 
+><mn>4</mn></mrow></msup 
+>
+</mrow></math></div>
+         <!--l. 306--><p class="nopar" >
+</p>
+         </dd></dl>
+     </dd></dl>
+ 
+</body> 
+</html>
+                                                                                         
+                                                                                         
+                                                                                         
+
+

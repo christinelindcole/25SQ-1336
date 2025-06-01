@@ -1,0 +1,16 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{Q1-1-1}{}{Taylor/Maclaurin Polynomial Approximation Key Ideas:}}{1}\relax 
+\doTocEntry\toclikesection{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-2}{Taylor/Maclaurin Polynomial Approximation Key Ideas:}}{1}\relax 
+\doTocEntry\toclof{1}{\csname a:TocLink\endcsname{1}{x1-1001r1}{}{\ignorespaces A graph showing a function and its zeroth, first, and second degree Taylor Polynomials, centered at x=a.}}{figure}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-4}{}{Taylor Polynomials -vs- Taylor Series:}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-5}{Taylor Polynomials -vs- Taylor Series:}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-6}{}{Error Estimation:}}{4}\relax 
+\doTocEntry\toclikesubsection{}{\csname a:TocLink\endcsname{1}{x1-3000}{QQ2-1-7}{Error Estimation:}}{5}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-8}{}{Taylor's Forumla/Lagrange's Form of the Remainder:}}{5}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-4000}{QQ2-1-9}{Taylor's Forumla/Lagrange's Form of the Remainder:}}{5}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-10}{}{Alternating Series Estimation Theorem (5.4):}}{5}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-5000}{QQ2-1-11}{Alternating Series Estimation Theorem (5.4):}}{5}\relax 
+\doTocEntry\toclof{2}{\csname a:TocLink\endcsname{1}{x1-5001r2}{}{\ignorespaces Figure illustrating the interval on which Taylor's Formula is applied.}}{figure}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{Q1-1-13}{}{Steps for using Taylor's Formula:}}{9}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-6000}{QQ2-1-14}{Steps for using Taylor's Formula:}}{9}\relax 
+\par 
